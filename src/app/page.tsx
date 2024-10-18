@@ -306,7 +306,7 @@ export default function Home() {
         <TextBoxReveal>
           <h1 className="font-helveticaLight text-7xl pb-1">Layanan Website</h1>
         </TextBoxReveal>
-        <ul className="w-full h-fit my-10 flex gap-10">
+        <ul className="w-full h-[42.5rem] my-10 flex gap-10">
           <motion.li
             variants={{
               hidden: { opacity: 0, y: 125 },
@@ -316,56 +316,70 @@ export default function Home() {
             whileInView="visible"
             viewport={{ once: true }}
             transition={{ duration: 1 }}
-            className="relative w-full h-fit rounded-md px-5 py-7 flex justify-start items-start gap-5 border-purple-600 hover:bg-purple-50 border hover:shadow-md transition-colors duration-300 ease-in-out"
+            className="relative w-full h-full rounded-md px-5 py-7 flex justify-start items-start gap-5 border-purple-600 hover:bg-purple-50 border hover:shadow-md transition-colors duration-300 ease-in-out"
           >
-            <div>
-              <h1 className="text-4xl">Portofolio</h1>
-              <p className="p-0.5">
-                Layanan Pembuatan website portofolio yang elegan dan
-                profesional, dirancang untuk menampilkan karya dan proyek Anda
-                secara optimal, membantu Anda untuk membuka peluang baru.
-              </p>
-              <ul className="my-2">
-                <li className="flex justify-start items-center gap-2">
-                  <FaCheck className="text-purple-600" /> Gratis Hosting
-                </li>
-                <li className="flex justify-start items-center gap-2">
-                  <FaCheck className="text-purple-600" /> Gratis Domain my.id
-                </li>
-                <li className="flex justify-start items-center gap-2">
-                  <FaCheck className="text-purple-600" /> Gratis SSL
-                </li>
-                <li className="flex justify-start items-center gap-2">
-                  <FaCheck className="text-purple-600" /> Gratis Logo
-                </li>
-                <li className="flex justify-start items-center gap-2">
-                  <FaCheck className="text-purple-600" /> Gratis Maintenance
-                </li>
-                <li className="flex justify-start items-center gap-2">
-                  <FaCheck className="text-purple-600" /> Wordpress / Non
-                  Wordpress
-                </li>
-                <li className="flex justify-start items-center gap-2">
-                  <FaCheck className="text-purple-600" /> Responsif
-                </li>
-                <li className="flex justify-start items-center gap-2">
-                  <FaCheck className="text-purple-600" /> SEO Friendly
-                </li>
-                <li className="flex justify-start items-center gap-2">
-                  <FaCheck className="text-purple-600" /> Mulai Dari 1 Halaman
-                </li>
-                <li className="flex justify-start items-center gap-2">
-                  <FaCheck className="text-purple-600" /> Mulai Dari 1x Revisi
-                </li>
-                <li className="flex justify-start items-center gap-2">
-                  <FaCheck className="text-purple-600" /> Template Premium
-                </li>
-              </ul>
+            <div className="flex flex-col justify-between items-start h-full">
+              <div>
+                <h1 className="text-4xl">Landing Page</h1>
+                <p className="p-0.5">
+                  Layanan landing page website yang dirancang khusus untuk
+                  mempromosikan produk. Cocok untuk pemasaran digital atau iklan
+                  online yang fokus pada satu pesan atau ajakan (call-to-action)
+                  yang jelas, seperti mendaftar, atau melakukan pembelian.
+                </p>
+                <ul className="my-2">
+                  <li className="flex justify-start items-center gap-2">
+                    <FaCheck className="text-purple-600" /> Gratis Hosting
+                  </li>
+                  <li className="flex justify-start items-center gap-2">
+                    <FaCheck className="text-purple-600" /> Gratis Domain
+                    (my.id)
+                  </li>
+                  <li className="flex justify-start items-center gap-2">
+                    <FaCheck className="text-purple-600" /> Gratis SSL
+                  </li>
+                  <li className="flex justify-start items-center gap-2">
+                    <FaCheck className="text-purple-600" /> Gratis Logo
+                  </li>
+                  <li className="flex justify-start items-center gap-2">
+                    <FaCheck className="text-purple-600" /> Gratis Maintenance
+                  </li>
+                  <li className="flex justify-start items-center gap-2">
+                    <FaCheck className="text-purple-600" /> Wordpress / Non
+                    Wordpress
+                  </li>
+                  <li className="flex justify-start items-center gap-2">
+                    <FaCheck className="text-purple-600" /> Integrasi Media
+                    Sosial
+                  </li>
+                  <li className="flex justify-start items-center gap-2">
+                    <FaCheck className="text-purple-600" /> Whatsapp Message
+                  </li>
+                  <li className="flex justify-start items-center gap-2">
+                    <FaCheck className="text-purple-600" /> Responsif
+                  </li>
+                  <li className="flex justify-start items-center gap-2">
+                    <FaCheck className="text-purple-600" /> SEO Friendly
+                  </li>
+                  <li className="flex justify-start items-center gap-2">
+                    <FaCheck className="text-purple-600" /> Copywriting
+                  </li>
+                  <li className="flex justify-start items-center gap-2">
+                    <FaCheck className="text-purple-600" /> Mulai Dari 1 Halaman
+                  </li>
+                  <li className="flex justify-start items-center gap-2">
+                    <FaCheck className="text-purple-600" /> Mulai Dari 2x Revisi
+                  </li>
+                  <li className="flex justify-start items-center gap-2">
+                    <FaCheck className="text-purple-600" /> Design Premium
+                  </li>
+                </ul>
+              </div>
               <div className="p-0.5 w-full pt-5 flex justify-between items-end">
                 <div>
                   <h3>Harga Mulai Dari</h3>
                   <h1 className="text-4xl my-2">
-                    <sup className="text-xl">Rp</sup> 550.000
+                    <sup className="text-xl">Rp</sup> 680.000
                     <sub className="text-sm"> / Tahun</sub>
                   </h1>
                 </div>
@@ -385,64 +399,74 @@ export default function Home() {
             whileInView="visible"
             viewport={{ once: true }}
             transition={{ duration: 1, delay: 0.5 }}
-            className="relative w-full h-fit rounded-md px-5 py-7 flex justify-start items-start gap-5 mt-10 border-purple-600 hover:bg-purple-50 border hover:shadow-md transition-colors duration-300 ease-in-out"
+            className="relative w-full h-full rounded-md px-5 py-7 flex justify-start items-start gap-5 mt-10 border-purple-600 hover:bg-purple-50 border hover:shadow-md transition-colors duration-300 ease-in-out"
           >
             <div className="absolute top-0 right-5 -translate-y-1/2">
               <img src="/icon/fire.png" className="w-14 h-14" />
             </div>
-            <div>
-              <h1 className="text-4xl">Company Profile</h1>
-              <p className="p-0.5">
-                Layanan pembuatan website company profile yang informatif dan
-                dirancang untuk memperkuat citra perusahaan Anda. Cocok untuk
-                Anda yang ingin memiliki bisnis dan membutuhkan website yang
-                mudah diakses.
-              </p>
-              <ul className="my-2">
-                <li className="flex justify-start items-center gap-2">
-                  <FaCheck className="text-purple-600" /> Gratis Hosting
-                </li>
-                <li className="flex justify-start items-center gap-2">
-                  <FaCheck className="text-purple-600" /> Gratis Domain my.id
-                </li>
-                <li className="flex justify-start items-center gap-2">
-                  <FaCheck className="text-purple-600" /> Gratis SSL
-                </li>
-                <li className="flex justify-start items-center gap-2">
-                  <FaCheck className="text-purple-600" /> Gratis Logo
-                </li>
-                <li className="flex justify-start items-center gap-2">
-                  <FaCheck className="text-purple-600" /> Gratis Maintenance
-                </li>
-                <li className="flex justify-start items-center gap-2">
-                  <FaCheck className="text-purple-600" /> Wordpress / Non
-                  Wordpress
-                </li>
-                <li className="flex justify-start items-center gap-2">
-                  <FaCheck className="text-purple-600" /> Gratis Mulai Dari 1
-                  akun email
-                </li>
-                <li className="flex justify-start items-center gap-2">
-                  <FaCheck className="text-purple-600" /> Responsif
-                </li>
-                <li className="flex justify-start items-center gap-2">
-                  <FaCheck className="text-purple-600" /> SEO Friendly
-                </li>
-                <li className="flex justify-start items-center gap-2">
-                  <FaCheck className="text-purple-600" /> Mulai Dari 1 Halaman
-                </li>
-                <li className="flex justify-start items-center gap-2">
-                  <FaCheck className="text-purple-600" /> Mulai Dari 1x Revisi
-                </li>
-                <li className="flex justify-start items-center gap-2">
-                  <FaCheck className="text-purple-600" /> Template Premium
-                </li>
-              </ul>
+            <div className="flex flex-col justify-between items-start h-full">
+              <div className="">
+                <h1 className="text-4xl">Company Profile</h1>
+                <p className="p-0.5">
+                  Layanan pembuatan website company profile yang informatif dan
+                  dirancang untuk memperkuat citra perusahaan Anda. Cocok untuk
+                  Anda yang ingin memiliki bisnis dan membutuhkan website yang
+                  mudah diakses.
+                </p>
+                <ul className="my-2">
+                  <li className="flex justify-start items-center gap-2">
+                    <FaCheck className="text-purple-600" /> Gratis Hosting
+                  </li>
+                  <li className="flex justify-start items-center gap-2">
+                    <FaCheck className="text-purple-600" /> Gratis Domain
+                    (my.id)
+                  </li>
+                  <li className="flex justify-start items-center gap-2">
+                    <FaCheck className="text-purple-600" /> Gratis SSL
+                  </li>
+                  <li className="flex justify-start items-center gap-2">
+                    <FaCheck className="text-purple-600" /> Gratis Logo
+                  </li>
+                  <li className="flex justify-start items-center gap-2">
+                    <FaCheck className="text-purple-600" /> Gratis Maintenance
+                  </li>
+                  <li className="flex justify-start items-center gap-2">
+                    <FaCheck className="text-purple-600" /> Wordpress / Non
+                    Wordpress
+                  </li>
+                  <li className="flex justify-start items-center gap-2">
+                    <FaCheck className="text-purple-600" /> Integrasi Media
+                    Sosial
+                  </li>
+                  <li className="flex justify-start items-center gap-2">
+                    <FaCheck className="text-purple-600" /> Responsif
+                  </li>
+                  <li className="flex justify-start items-center gap-2">
+                    <FaCheck className="text-purple-600" /> SEO Friendly
+                  </li>
+                  <li className="flex justify-start items-center gap-2">
+                    <FaCheck className="text-purple-600" /> Copywriting
+                  </li>
+                  <li className="flex justify-start items-center gap-2">
+                    <FaCheck className="text-purple-600" /> Mulai Dari 1 Halaman
+                  </li>
+                  <li className="flex justify-start items-center gap-2">
+                    <FaCheck className="text-purple-600" /> Mulai Dari 2x Revisi
+                  </li>
+                  <li className="flex justify-start items-center gap-2">
+                    <FaCheck className="text-purple-600" /> Design Premium
+                  </li>
+                  <li className="flex justify-start items-center gap-2">
+                    <FaCheck className="text-purple-600" /> Mulai Dari 1 Akun
+                    Email
+                  </li>
+                </ul>
+              </div>
               <div className="p-0.5 w-full pt-5 flex justify-between items-end">
                 <div>
                   <h3>Harga Mulai Dari</h3>
                   <h1 className="text-4xl my-2">
-                    <sup className="text-xl">Rp</sup> 650.000
+                    <sup className="text-xl">Rp</sup> 750.000
                     <sub className="text-sm"> / Tahun</sub>
                   </h1>
                 </div>
@@ -462,56 +486,48 @@ export default function Home() {
             whileInView="visible"
             viewport={{ once: true }}
             transition={{ duration: 1, delay: 1 }}
-            className="relative w-full h-fit rounded-md px-5 py-7 flex justify-start items-start gap-5 mt-20 border-purple-600 hover:bg-purple-50 border hover:shadow-md transition-colors duration-300 ease-in-out"
+            className="relative w-full h-full rounded-md px-5 py-7 flex justify-start items-start gap-5 mt-20 border-purple-600 hover:bg-purple-50 border hover:shadow-md transition-colors duration-300 ease-in-out"
           >
-            <div>
-              <h1 className="text-4xl">Custom</h1>
-              <p className="p-0.5">
-                Layanan pembuatan website custom yang akan disesuaikan dengan
-                kebutuhan Anda. Mulai dari web e-commerce hingga sistem
-                administrasi, layanan ini dirancang untuk mencapai kebutuhan
-                Anda.
-              </p>
-              <ul className="my-2">
-                <li className="flex justify-start items-center gap-2">
-                  <FaCheck className="text-purple-600" /> Gratis Hosting
-                </li>
-                <li className="flex justify-start items-center gap-2">
-                  <FaCheck className="text-purple-600" /> Gratis Domain my.id
-                </li>
-                <li className="flex justify-start items-center gap-2">
-                  <FaCheck className="text-purple-600" /> Gratis SSL
-                </li>
-                <li className="flex justify-start items-center gap-2">
-                  <FaCheck className="text-purple-600" /> Gratis Logo
-                </li>
-                <li className="flex justify-start items-center gap-2">
-                  <FaCheck className="text-purple-600" /> Gratis Maintenance
-                </li>
-                <li className="flex justify-start items-center gap-2">
-                  <FaCheck className="text-purple-600" /> Wordpress / Non
-                  Wordpress
-                </li>
-                <li className="flex justify-start items-center gap-2">
-                  <FaCheck className="text-purple-600" /> Gratis Mulai Dari 1
-                  akun email
-                </li>
-                <li className="flex justify-start items-center gap-2">
-                  <FaCheck className="text-purple-600" /> Responsif
-                </li>
-                <li className="flex justify-start items-center gap-2">
-                  <FaCheck className="text-purple-600" /> SEO Friendly
-                </li>
-                <li className="flex justify-start items-center gap-2">
-                  <FaCheck className="text-purple-600" /> Mulai Dari 1 Halaman
-                </li>
-                <li className="flex justify-start items-center gap-2">
-                  <FaCheck className="text-purple-600" /> Mulai Dari 1x Revisi
-                </li>
-                <li className="flex justify-start items-center gap-2">
-                  <FaCheck className="text-purple-600" /> Template Premium
-                </li>
-              </ul>
+            <div className="flex flex-col justify-between items-start h-full">
+              <div>
+                <h1 className="text-4xl">Custom</h1>
+                <p className="p-0.5">
+                  Layanan pembuatan website custom yang akan disesuaikan dengan
+                  kebutuhan Anda. Mulai dari web e-commerce hingga sistem
+                  administrasi, layanan ini dirancang untuk mencapai kebutuhan
+                  Anda.
+                </p>
+                <ul className="my-2">
+                  <li className="flex justify-start items-center gap-2">
+                    <FaCheck className="text-purple-600" /> Gratis Hosting
+                  </li>
+                  <li className="flex justify-start items-center gap-2">
+                    <FaCheck className="text-purple-600" /> Gratis SSL
+                  </li>
+                  <li className="flex justify-start items-center gap-2">
+                    <FaCheck className="text-purple-600" /> Gratis Maintenance
+                  </li>
+                  <li className="flex justify-start items-center gap-2">
+                    <FaCheck className="text-purple-600" /> Custom Domain
+                  </li>
+                  <li className="flex justify-start items-center gap-2">
+                    <FaCheck className="text-purple-600" /> Custom Bahasa
+                    Pemrograman
+                  </li>
+                  <li className="flex justify-start items-center gap-2">
+                    <FaCheck className="text-purple-600" /> Responsif
+                  </li>
+                  <li className="flex justify-start items-center gap-2">
+                    <FaCheck className="text-purple-600" /> SEO Friendly
+                  </li>
+                  <li className="flex justify-start items-center gap-2">
+                    <FaCheck className="text-purple-600" /> Design Unik
+                  </li>
+                  <li className="flex justify-start items-center gap-2">
+                    <FaCheck className="text-purple-600" /> Custom Fitur
+                  </li>
+                </ul>
+              </div>
               <div className="p-0.5 w-full pt-5 flex justify-between items-end">
                 <div>
                   <h3>Harga Mulai Dari</h3>
