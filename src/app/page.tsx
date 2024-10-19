@@ -541,6 +541,22 @@ export default function Home() {
             </div>
           </motion.li>
         </ul>
+        <motion.div
+          variants={{
+            hidden: { opacity: 0, y: 125 },
+            visible: { opacity: 1, y: 0 },
+          }}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          transition={{ duration: 1, delay: 1.5 }}
+          className="w-full flex justify-center items-center mt-20"
+        >
+          <button className="flex justify-start items-center gap-1 text-xl text-purple-600 pl-4 px-3 py-1 rounded-md relative before:content-[''] before:w-full before:h-[1.5px] before:absolute before:left-0 before:bottom-0 before:bg-purple-500 before:transition-transform before:ease-in-out before:duration-[500ms] before:scale-x-0 before:scale-y-100 before:origin-right hover:before:scale-x-100 hover:before:origin-left">
+            Lihat Semua Layanan
+            <GoArrowUpRight className="w-5 h-5 text-purple-600 stroke-1" />
+          </button>
+        </motion.div>
       </section>
     </motion.main>
   );

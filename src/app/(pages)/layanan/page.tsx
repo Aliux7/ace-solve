@@ -20,6 +20,7 @@ const page = () => {
   const secondSubHeading = splitStringUsingRegex("Layanan Website");
   const [selectedWebsiteType, setSelectedWebsiteType] =
     useState("Landing Page");
+  const [openFaq, setOpenFaq] = useState(0);
 
   useEffect(() => {
     const sequence = async () => {
@@ -535,28 +536,43 @@ const page = () => {
           </div>
         </div>
       </section>
-      <section className="relative w-full min-h-screen h-full flex flex-col justify-center items-center">
+      <motion.section
+        variants={{
+          hidden: { opacity: 0, y: 125 },
+          visible: { opacity: 1, y: 0 },
+        }}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+        transition={{ duration: 1}}
+        className="relative w-full h-fit flex flex-col justify-center items-center"
+      >
         <h1 className="text-6xl font-helveticaLight font-bold">FAQ</h1>
         <h1 className="text-2xl text-gray-600">Pertanyaan seputar AceSolve</h1>
-        <div className="flex flex-col gap-10 my-10 w-full px-40">
+        <div className="flex flex-col gap-10 my-10 w-full max-w-[60rem]">
           <div
             id="accordion-flush"
             data-accordion="collapse"
-            data-active-classes="bg-white dark:bg-gray-900 text-gray-900 dark:text-white"
-            data-inactive-classes="text-gray-500 dark:text-gray-400"
+            data-active-classes="bg-white text-gray-900"
+            data-inactive-classes="text-gray-500"
           >
-            <h2 id="accordion-flush-heading-1">
+            <h2
+              id="accordion-flush-heading-1"
+              onClick={() => (openFaq == 1 ? setOpenFaq(0) : setOpenFaq(1))}
+            >
               <button
                 type="button"
-                className="flex items-center justify-between w-full py-5 font-medium rtl:text-right text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400 gap-3"
+                className="flex items-center justify-between w-full py-5 font-medium rtl:text-right text-gray-800 border-b border-gray-400 gap-3"
                 data-accordion-target="#accordion-flush-body-1"
                 aria-expanded="true"
                 aria-controls="accordion-flush-body-1"
               >
-                <span>What is Flowbite?</span>
+                <span>Bagaimana Proses Pemesanan Layanan Website?</span>
                 <svg
                   data-accordion-icon
-                  className="w-3 h-3 rotate-180 shrink-0"
+                  className={`w-3 h-3 transition-all duration-300 ease-in-out ${
+                    openFaq == 1 ? "" : "rotate-180"
+                  } shrink-0`}
                   aria-hidden="true"
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
@@ -574,40 +590,69 @@ const page = () => {
             </h2>
             <div
               id="accordion-flush-body-1"
-              className=""
+              className={`${
+                openFaq == 1 ? "h-[19rem] opacity-100" : "h-0 opacity-0"
+              } overflow-hidden transition-all duration-300 ease-in-out`}
               aria-labelledby="accordion-flush-heading-1"
             >
-              <div className="py-5 border-b border-gray-200 dark:border-gray-700">
-                <p className="mb-2 text-gray-500 dark:text-gray-400">
-                  Flowbite is an open-source library of interactive components
-                  built on top of Tailwind CSS including buttons, dropdowns,
-                  modals, navbars, and more.
-                </p>
-                <p className="text-gray-500 dark:text-gray-400">
-                  Check out this guide to learn how to{" "}
-                  <a
-                    href="/docs/getting-started/introduction/"
-                    className="text-blue-600 dark:text-blue-500 hover:underline"
-                  >
-                    get started
-                  </a>{" "}
-                  and start developing websites even faster with components on
-                  top of Tailwind CSS.
-                </p>
+              <div className="px-3 border-b border-gray-400">
+                <ul>
+                  <li className="flex justify-start items-center my-1 gap-2 border-y py-2 hover:bg-purple-100 px-2">
+                    <span className="bg-purple-600 rounded-sm p-0.5 px-1 text-white">
+                      01/
+                    </span>{" "}
+                    Pesan Paket Layanan Website dan Konsultasi
+                  </li>
+                  <li className="flex justify-start items-center my-1 gap-2 border-y py-2 hover:bg-purple-100 px-2">
+                    <span className="bg-purple-600 rounded-sm p-0.5 px-1 text-white">
+                      02/
+                    </span>{" "}
+                    Pembayaran Layanan Website
+                  </li>
+                  <li className="flex justify-start items-center my-1 gap-2 border-y py-2 hover:bg-purple-100 px-2">
+                    <span className="bg-purple-600 rounded-sm p-0.5 px-1 text-white">
+                      03/
+                    </span>{" "}
+                    Kirim Informasi untuk Website
+                  </li>
+                  <li className="flex justify-start items-center my-1 gap-2 border-y py-2 hover:bg-purple-100 px-2">
+                    <span className="bg-purple-600 rounded-sm p-0.5 px-1 text-white">
+                      04/
+                    </span>{" "}
+                    Proses pengembangan Website dan Revisi
+                  </li>
+                  <li className="flex justify-start items-center my-1 gap-2 border-y py-2 hover:bg-purple-100 px-2">
+                    <span className="bg-purple-600 rounded-sm p-0.5 px-1 text-white">
+                      05/
+                    </span>{" "}
+                    Proses pengujian
+                  </li>
+                  <li className="flex justify-start items-center my-1 gap-2 border-y py-2 hover:bg-purple-100 px-2">
+                    <span className="bg-purple-600 rounded-sm p-0.5 px-1 text-white">
+                      06/
+                    </span>{" "}
+                    Publish Website
+                  </li>
+                </ul>
               </div>
             </div>
-            <h2 id="accordion-flush-heading-2">
+            <h2
+              id="accordion-flush-heading-1"
+              onClick={() => (openFaq == 2 ? setOpenFaq(0) : setOpenFaq(2))}
+            >
               <button
                 type="button"
-                className="flex items-center justify-between w-full py-5 font-medium rtl:text-right text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400 gap-3"
-                data-accordion-target="#accordion-flush-body-2"
-                aria-expanded="false"
-                aria-controls="accordion-flush-body-2"
+                className="flex items-center justify-between w-full py-5 font-medium rtl:text-right text-gray-800 border-b border-gray-400 gap-3"
+                data-accordion-target="#accordion-flush-body-1"
+                aria-expanded="true"
+                aria-controls="accordion-flush-body-1"
               >
-                <span>Is there a Figma file available?</span>
+                <span>Apa Perbedaan Wordpress Dengan Non-Wordpress?</span>
                 <svg
                   data-accordion-icon
-                  className="w-3 h-3 rotate-180 shrink-0"
+                  className={`w-3 h-3 transition-all duration-300 ease-in-out ${
+                    openFaq == 2 ? "" : "rotate-180"
+                  } shrink-0`}
                   aria-hidden="true"
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
@@ -624,43 +669,89 @@ const page = () => {
               </button>
             </h2>
             <div
-              id="accordion-flush-body-2"
-              className="hidden"
-              aria-labelledby="accordion-flush-heading-2"
+              id="accordion-flush-body-1"
+              className={`${
+                openFaq == 2 ? "h-[16rem] opacity-100" : "h-0 opacity-0"
+              } overflow-hidden transition-all duration-300 ease-in-out`}
+              aria-labelledby="accordion-flush-heading-1"
             >
-              <div className="py-5 border-b border-gray-200 dark:border-gray-700">
-                <p className="mb-2 text-gray-500 dark:text-gray-400">
-                  Flowbite is first conceptualized and designed using the Figma
-                  software so everything you see in the library has a design
-                  equivalent in our Figma file.
-                </p>
-                <p className="text-gray-500 dark:text-gray-400">
-                  Check out the{" "}
-                  <a
-                    href="https://flowbite.com/figma/"
-                    className="text-blue-600 dark:text-blue-500 hover:underline"
-                  >
-                    Figma design system
-                  </a>{" "}
-                  based on the utility classes from Tailwind CSS and components
-                  from Flowbite.
-                </p>
+              <div className="px-3 border-b border-gray-400 flex gap-10 h-full py-3">
+                <div className="w-1/2 h-full border border-purple-600 rounded-md p-5">
+                  <h1 className="text-2xl ">Wordpress</h1>
+                  <ul className="my-1">
+                    <li className="flex justify-start items-center gap-2">
+                      <FaCheck className="text-purple-600" /> Durasi Pengerjaan
+                      Lebih Cepat
+                    </li>
+                    <li className="flex justify-start items-center gap-2">
+                      <FaCheck className="text-purple-600" /> Keamanan Standar
+                    </li>
+                    <li className="flex justify-start items-center gap-2">
+                      <FaCheck className="text-purple-600" /> Memiliki Berbagai
+                      Tema Design
+                    </li>
+                    <li className="flex justify-start items-center gap-2">
+                      <FaCheck className="text-purple-600" /> Sudah memiliki
+                      dukungan Yoast SEO
+                    </li>
+                    <li className="flex justify-start items-center gap-2">
+                      <FaCheck className="text-purple-600" /> Memiliki Berbagai
+                      Plug-in
+                    </li>
+                    <li className="flex justify-start items-center gap-2">
+                      <FaCheck className="text-purple-600" /> Cocok untuk
+                      website skala kecil hingga menengah
+                    </li>
+                  </ul>
+                </div>
+                <div className="w-1/2 h-full border border-purple-600 rounded-md p-5">
+                  <h1 className="text-2xl ">Non-Wordpress</h1>
+                  <ul className="my-1">
+                    <li className="flex justify-start items-center gap-2">
+                      <FaCheck className="text-purple-600" /> Kebutuhan / Fitur
+                      Spesifik
+                    </li>
+                    <li className="flex justify-start items-center gap-2">
+                      <FaCheck className="text-purple-600" /> Kustomisasi
+                      Keamanan
+                    </li>
+                    <li className="flex justify-start items-center gap-2">
+                      <FaCheck className="text-purple-600" /> Kustomisasi Design
+                      / Animasi Rumit
+                    </li>
+                    <li className="flex justify-start items-center gap-2">
+                      <FaCheck className="text-purple-600" /> Kustomisasi Bahasa
+                      Pemrograman
+                    </li>
+                    <li className="flex justify-start items-center gap-2">
+                      <FaCheck className="text-purple-600" /> Cocok untuk
+                      website skala tertutup (Private), skala menengah hingga
+                      skala besar
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
-            <h2 id="accordion-flush-heading-3">
+            <h2
+              id="accordion-flush-heading-1"
+              onClick={() => (openFaq == 3 ? setOpenFaq(0) : setOpenFaq(3))}
+            >
               <button
                 type="button"
-                className="flex items-center justify-between w-full py-5 font-medium rtl:text-right text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400 gap-3"
-                data-accordion-target="#accordion-flush-body-3"
-                aria-expanded="false"
-                aria-controls="accordion-flush-body-3"
+                className="flex items-center justify-between w-full py-5 font-medium rtl:text-right text-gray-800 border-b border-gray-400 gap-3"
+                data-accordion-target="#accordion-flush-body-1"
+                aria-expanded="true"
+                aria-controls="accordion-flush-body-1"
               >
                 <span>
-                  What are the differences between Flowbite and Tailwind UI?
+                  Apa Faktor Yang Mempengaruhi Harga Dan Durasi Pembuatan
+                  Website?
                 </span>
                 <svg
                   data-accordion-icon
-                  className="w-3 h-3 rotate-180 shrink-0"
+                  className={`w-3 h-3 transition-all duration-300 ease-in-out ${
+                    openFaq == 3 ? "" : "rotate-180"
+                  } shrink-0`}
                   aria-hidden="true"
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
@@ -677,50 +768,44 @@ const page = () => {
               </button>
             </h2>
             <div
-              id="accordion-flush-body-3"
-              className="hidden"
-              aria-labelledby="accordion-flush-heading-3"
+              id="accordion-flush-body-1"
+              className={`${
+                openFaq == 3 ? "h-[13rem] opacity-100" : "h-0 opacity-0"
+              } overflow-hidden transition-all duration-300 ease-in-out`}
+              aria-labelledby="accordion-flush-heading-1"
             >
-              <div className="py-5 border-b border-gray-200 dark:border-gray-700">
-                <p className="mb-2 text-gray-500 dark:text-gray-400">
-                  The main difference is that the core components from Flowbite
-                  are open source under the MIT license, whereas Tailwind UI is
-                  a paid product. Another difference is that Flowbite relies on
-                  smaller and standalone components, whereas Tailwind UI offers
-                  sections of pages.
-                </p>
-                <p className="mb-2 text-gray-500 dark:text-gray-400">
-                  However, we actually recommend using both Flowbite, Flowbite
-                  Pro, and even Tailwind UI as there is no technical reason
-                  stopping you from using the best of two worlds.
-                </p>
-                <p className="mb-2 text-gray-500 dark:text-gray-400">
-                  Learn more about these technologies:
-                </p>
-                <ul className="ps-5 text-gray-500 list-disc dark:text-gray-400">
-                  <li>
-                    <a
-                      href="https://flowbite.com/pro/"
-                      className="text-blue-600 dark:text-blue-500 hover:underline"
-                    >
-                      Flowbite Pro
-                    </a>
+              <div className="px-3 border-b border-gray-400">
+                <ul>
+                  <li className="flex justify-start items-center my-1 gap-2 border-y py-2 hover:bg-purple-100 px-2">
+                    <span className="bg-purple-600 rounded-sm p-0.5 px-1 text-white">
+                      01/
+                    </span>{" "}
+                    Design Website
                   </li>
-                  <li>
-                    <a
-                      href="https://tailwindui.com/"
-                      rel="nofollow"
-                      className="text-blue-600 dark:text-blue-500 hover:underline"
-                    >
-                      Tailwind UI
-                    </a>
+                  <li className="flex justify-start items-center my-1 gap-2 border-y py-2 hover:bg-purple-100 px-2">
+                    <span className="bg-purple-600 rounded-sm p-0.5 px-1 text-white">
+                      02/
+                    </span>{" "}
+                    Jumlah Halaman
+                  </li>
+                  <li className="flex justify-start items-center my-1 gap-2 border-y py-2 hover:bg-purple-100 px-2">
+                    <span className="bg-purple-600 rounded-sm p-0.5 px-1 text-white">
+                      03/
+                    </span>{" "}
+                    Fitur Spesifik
+                  </li>
+                  <li className="flex justify-start items-center my-1 gap-2 border-y py-2 hover:bg-purple-100 px-2">
+                    <span className="bg-purple-600 rounded-sm p-0.5 px-1 text-white">
+                      04/
+                    </span>{" "}
+                    SEO Friendly
                   </li>
                 </ul>
               </div>
             </div>
           </div>
         </div>
-      </section>
+      </motion.section>
     </motion.main>
   );
 };
