@@ -10,7 +10,6 @@ import splitStringUsingRegex from "@/app/utlis/splitStringUsingRegex";
 
 const page = () => {
   const controls = useAnimation();
-  const locomotiveScroll = new LocomotiveScroll();
   const firstHeading = splitStringUsingRegex("Elevate");
   const secondHeading = splitStringUsingRegex("your business");
   const thirdHeading = splitStringUsingRegex("success");
@@ -18,9 +17,21 @@ const page = () => {
   const fifthHeading = splitStringUsingRegex("best services");
   const firstSubHeading = splitStringUsingRegex("pilihan utama");
   const secondSubHeading = splitStringUsingRegex("Layanan Website");
-  const [selectedWebsiteType, setSelectedWebsiteType] =
-    useState("Landing Page");
   const [openFaq, setOpenFaq] = useState(0);
+
+  useEffect(() => {
+    let locomotiveScroll: LocomotiveScroll;
+
+    if (typeof window !== "undefined") {
+      import("locomotive-scroll").then((LocomotiveScrollModule) => {
+        locomotiveScroll = new LocomotiveScrollModule.default();
+      });
+    }
+
+    return () => {
+      locomotiveScroll?.destroy();
+    };
+  }, []);
 
   useEffect(() => {
     const sequence = async () => {
@@ -42,9 +53,11 @@ const page = () => {
   }, [controls]);
 
   return (
-    <motion.main className={`w-full min-h-screen flex flex-col gap-60 px-10`}>
+    <motion.main
+      className={`w-full min-h-screen flex flex-col gap-60 px-3 sm:px-6 lg:px-10`}
+    >
       <section className="relative w-full h-screen flex justify-center items-center gap-24 py-10">
-        <div className="relative">
+        <div className="relative z-10">
           <motion.img
             variants={{
               hidden: { opacity: 0, x: 25 },
@@ -54,7 +67,7 @@ const page = () => {
             animate={controls}
             transition={{ duration: 1, delay: 0.5 }}
             src="Mockup2.png"
-            className="h-[55vh]"
+            className="h-[45vh] sm:h-[55vh] mt-5"
           />
           <div className="absolute -bottom-[40%] h-[15vh] w-full opacity-10 animate-float">
             <motion.img
@@ -67,14 +80,14 @@ const page = () => {
               viewport={{ once: true }}
               transition={{ duration: 3, delay: 1.5 }}
               src="Mockup2.png"
-              className="h-full w-full object-cover object-bottom -scale-y-100"
+              className="h-full w-full object-cover object-bottom -scale-y-100 blur-[2px]"
             />
             <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-t from-white to-transparent"></div>
           </div>
         </div>
         <div className="absolute top-24 right-0">
           <motion.h1
-            className="font-helveticaLight text-5xl pb-1 text-end text-gray-500"
+            className="font-helveticaLight text-2xl leading-5 sm:text-4xl lg:text-5xl pb-1 text-end text-gray-500"
             initial="hidden"
             whileInView="reveal"
             transition={{ staggerChildren: 0.035 }}
@@ -157,7 +170,7 @@ const page = () => {
             </div>
           </motion.h1>
         </div>
-        <div className="absolute bottom-5 left-0">
+        <div className="absolute bottom-5 left-0 z-20">
           <motion.h1
             className="font-helveticaLight"
             initial="hidden"
@@ -165,7 +178,7 @@ const page = () => {
             transition={{ staggerChildren: 0.05 }}
             viewport={{ once: true }}
           >
-            <div className="overflow-hidden py-1 text-xl px-1.5">
+            <div className="overflow-hidden py-1 sm:text-xl px-0.5 sm:px-1.5">
               {firstSubHeading.map((char, index) => (
                 <motion.span
                   key={index}
@@ -180,7 +193,7 @@ const page = () => {
                 </motion.span>
               ))}
             </div>
-            <div className="overflow-hidden font-helveticaLight text-8xl pb-1">
+            <div className="overflow-hidden font-helveticaLight text-4xl sm:text-7xl lg:text-8xl pb-1">
               {secondSubHeading.map((char, index) => (
                 <motion.span
                   key={index}
@@ -199,13 +212,17 @@ const page = () => {
         </div>
       </section>
       <section className="relative w-full min-h-screen h-full flex flex-col justify-start items-start">
-        <div className="flex gap-10">
-          <div className="w-1/2">
+        <div className="flex flex-col xl:flex-row gap-10">
+          <div className="w-full xl:w-1/2">
             <TextBoxReveal>
-              <h3 className="overflow-hidden text-xl px-1.5">layanan</h3>
+              <h3 className="overflow-hidden sm:text-xl px-0.5 lg:px-1.5">
+                layanan
+              </h3>
             </TextBoxReveal>
             <TextBoxReveal>
-              <h1 className="text-6xl pb-1">Landing Page</h1>
+              <h1 className="text-4xl sm:text-5xl lg:text-6xl  pb-1">
+                Landing Page
+              </h1>
             </TextBoxReveal>
             <motion.div
               variants={{
@@ -219,7 +236,9 @@ const page = () => {
               className="relative w-full h-fit rounded-md px-5 py-7 flex my-5 justify-start items-start gap-5 border-purple-600 hover:bg-purple-50 border hover:shadow-md transition-colors duration-300 ease-in-out"
             >
               <div>
-                <h1 className="text-4xl">Paket Landing Page</h1>
+                <h1 className="text-2xl sm:text-3xl lg:text-4xl">
+                  Paket Landing Page
+                </h1>
                 <p className="p-0.5">
                   Layanan landing page website yang dirancang khusus untuk
                   mempromosikan produk, mengumpulkan data pengguna, atau
@@ -228,7 +247,7 @@ const page = () => {
                   yang jelas, seperti mengisi formulir, mendaftar, atau
                   melakukan pembelian.
                 </p>
-                <ul className="my-2 grid grid-cols-2 ">
+                <ul className="my-2 grid grid-cols-1 sm:grid-cols-2 ">
                   <li className="flex justify-start items-center gap-2">
                     <FaCheck className="text-purple-600" /> Gratis Hosting
                   </li>
@@ -275,28 +294,32 @@ const page = () => {
                     <FaCheck className="text-purple-600" /> Design Premium
                   </li>
                 </ul>
-                <div className="p-0.5 w-full pt-5 flex justify-between items-end">
+                <div className="p-0.5 w-full pt-5 flex flex-col sm:flex-row xl:flex-col justify-between items-baseline">
                   <div>
                     <h3>Harga Mulai Dari</h3>
-                    <h1 className="text-4xl my-2">
+                    <h1 className="text-3xl sm:text-4xl my-2">
                       <sup className="text-xl">Rp</sup> 680.000
                       <sub className="text-sm"> / Tahun</sub>
                     </h1>
                   </div>
-                  <button className="flex justify-start items-center gap-1 text-lg bg-purple-600 text-white px-3 py-1 rounded-md">
-                    Pesan Sekarang
+                  <button className="self-end flex justify-start items-center gap-1 text-base sm:text-lg bg-purple-600 text-white px-3 py-1 rounded-md">
+                    Selengkapnya
                     <GoArrowUpRight className="w-5 h-5 text-white stroke-1" />
                   </button>
                 </div>
               </div>
             </motion.div>
           </div>
-          <div className="w-1/2 mt-[25%]">
+          <div className="w-full xl:w-1/2 xl:mt-[25%]">
             <TextBoxReveal>
-              <h3 className="overflow-hidden text-xl px-1.5">layanan</h3>
+              <h3 className="overflow-hidden sm:text-xl px-0.5 lg:px-1.5">
+                layanan
+              </h3>
             </TextBoxReveal>
             <TextBoxReveal>
-              <h1 className="text-6xl">Company Profile</h1>
+              <h1 className="text-4xl sm:text-5xl lg:text-6xl  pb-1">
+                Company Profile
+              </h1>
             </TextBoxReveal>
             <motion.div
               variants={{
@@ -310,14 +333,16 @@ const page = () => {
               className="relative w-full h-fit rounded-md px-5 py-7 flex my-5 justify-start items-start gap-5 border-purple-600 hover:bg-purple-50 border hover:shadow-md transition-colors duration-300 ease-in-out"
             >
               <div>
-                <h1 className="text-4xl">Paket Company Profile</h1>
+                <h1 className="text-2xl sm:text-3xl lg:text-4xl">
+                  Paket Company Profile
+                </h1>
                 <p className="p-0.5">
                   Layanan pembuatan website company profile yang informatif dan
                   dirancang untuk memperkuat citra perusahaan Anda. Cocok untuk
                   Anda yang ingin memiliki bisnis dan membutuhkan website yang
                   mudah diakses.
                 </p>
-                <ul className="my-2 grid grid-cols-2 ">
+                <ul className="my-2 grid grid-cols-1 sm:grid-cols-2 ">
                   <li className="flex justify-start items-center gap-2">
                     <FaCheck className="text-purple-600" /> Gratis Hosting
                   </li>
@@ -365,16 +390,16 @@ const page = () => {
                     Email
                   </li>
                 </ul>
-                <div className="p-0.5 w-full pt-5 flex justify-between items-end">
+                <div className="p-0.5 w-full pt-5 flex flex-col sm:flex-row xl:flex-col justify-between items-baseline">
                   <div>
                     <h3>Harga Mulai Dari</h3>
-                    <h1 className="text-4xl my-2">
+                    <h1 className="text-3xl sm:text-4xl my-2">
                       <sup className="text-xl">Rp</sup> 750.000
                       <sub className="text-sm"> / Tahun</sub>
                     </h1>
                   </div>
-                  <button className="flex justify-start items-center gap-1 text-lg bg-purple-600 text-white px-3 py-1 rounded-md">
-                    Pesan Sekarang
+                  <button className="self-end flex justify-start items-center gap-1 text-base sm:text-lg bg-purple-600 text-white px-3 py-1 rounded-md">
+                    Selengkapnya
                     <GoArrowUpRight className="w-5 h-5 text-white stroke-1" />
                   </button>
                 </div>
@@ -382,13 +407,15 @@ const page = () => {
             </motion.div>
           </div>
         </div>
-        <div className="flex gap-10 mb-10">
-          <div className="w-1/2">
+        <div className="flex flex-col xl:flex-row gap-10 mt-10 xl:mt-0 mb-10">
+          <div className="w-full xl:w-1/2">
             <TextBoxReveal>
-              <h3 className="overflow-hidden text-xl px-1.5">layanan</h3>
+              <h3 className="overflow-hidden sm:text-xl px-0.5 lg:px-1.5">
+                layanan
+              </h3>
             </TextBoxReveal>
             <TextBoxReveal>
-              <h1 className="text-6xl">Portofolio</h1>
+              <h1 className="text-4xl sm:text-5xl lg:text-6xl ">Portofolio</h1>
             </TextBoxReveal>
             <motion.div
               variants={{
@@ -402,13 +429,15 @@ const page = () => {
               className="relative w-full h-fit rounded-md px-5 py-7 flex my-5 justify-start items-start gap-5 border-purple-600 hover:bg-purple-50 border hover:shadow-md transition-colors duration-300 ease-in-out"
             >
               <div>
-                <h1 className="text-4xl">Paket Portofolio</h1>
+                <h1 className="text-2xl sm:text-3xl lg:text-4xl">
+                  Paket Portofolio
+                </h1>
                 <p className="p-0.5">
                   Layanan Pembuatan website portofolio yang elegan dan
                   profesional, dirancang untuk menampilkan karya dan proyek Anda
                   secara optimal, membantu Anda untuk membuka peluang baru.
                 </p>
-                <ul className="my-2 grid grid-cols-2 ">
+                <ul className="my-2 grid grid-cols-1 sm:grid-cols-2 ">
                   <li className="flex justify-start items-center gap-2">
                     <FaCheck className="text-purple-600" /> Gratis Hosting
                   </li>
@@ -449,28 +478,30 @@ const page = () => {
                     <FaCheck className="text-purple-600" /> Design Premium
                   </li>
                 </ul>
-                <div className="p-0.5 w-full pt-5 flex justify-between items-end">
+                <div className="p-0.5 w-full pt-5 flex flex-col sm:flex-row xl:flex-col justify-between items-baseline">
                   <div>
                     <h3>Harga Mulai Dari</h3>
-                    <h1 className="text-4xl my-2">
+                    <h1 className="text-3xl sm:text-4xl my-2">
                       <sup className="text-xl">Rp</sup> 620.000
                       <sub className="text-sm"> / Tahun</sub>
                     </h1>
                   </div>
-                  <button className="flex justify-start items-center gap-1 text-lg bg-purple-600 text-white px-3 py-1 rounded-md">
-                    Pesan Sekarang
+                  <button className="self-end flex justify-start items-center gap-1 text-base sm:text-lg bg-purple-600 text-white px-3 py-1 rounded-md">
+                    Selengkapnya
                     <GoArrowUpRight className="w-5 h-5 text-white stroke-1" />
                   </button>
                 </div>
               </div>
             </motion.div>
           </div>
-          <div className="w-1/2 mt-[25%]">
+          <div className="w-full xl:w-1/2 xl:mt-[25%]">
             <TextBoxReveal>
-              <h3 className="overflow-hidden text-xl px-1.5">layanan</h3>
+              <h3 className="overflow-hidden sm:text-xl px-0.5 lg:px-1.5">
+                layanan
+              </h3>
             </TextBoxReveal>
             <TextBoxReveal>
-              <h1 className="text-6xl">Custom</h1>
+              <h1 className="text-4xl sm:text-5xl lg:text-6xl ">Custom</h1>
             </TextBoxReveal>
             <motion.div
               variants={{
@@ -484,14 +515,16 @@ const page = () => {
               className="relative w-full h-fit rounded-md px-5 py-7 flex my-5 justify-start items-start gap-5 border-purple-600 hover:bg-purple-50 border hover:shadow-md transition-colors duration-300 ease-in-out"
             >
               <div>
-                <h1 className="text-4xl">Paket Custom</h1>
+                <h1 className="text-2xl sm:text-3xl lg:text-4xl">
+                  Paket Custom
+                </h1>
                 <p className="p-0.5">
                   Layanan pembuatan website custom yang akan disesuaikan dengan
                   kebutuhan Anda. Mulai dari website e-commerce, website blog /
                   news hingga website sistem administrasi, layanan ini dirancang
                   untuk mencapai kebutuhan Anda.
                 </p>
-                <ul className="my-2 grid grid-cols-2 ">
+                <ul className="my-2 grid grid-cols-1 sm:grid-cols-2 ">
                   <li className="flex justify-start items-center gap-2">
                     <FaCheck className="text-purple-600" /> Gratis Hosting
                   </li>
@@ -521,13 +554,13 @@ const page = () => {
                     <FaCheck className="text-purple-600" /> Custom Fitur
                   </li>
                 </ul>
-                <div className="p-0.5 w-full pt-5 flex justify-between items-end">
+                <div className="p-0.5 w-full pt-5 flex flex-col sm:flex-row xl:flex-col justify-between items-baseline">
                   <div>
                     <h3>Harga Mulai Dari</h3>
-                    <h1 className="text-4xl my-2">Harga Khusus</h1>
+                    <h1 className="text-3xl sm:text-4xl my-2">Harga Khusus</h1>
                   </div>
-                  <button className="flex justify-start items-center gap-1 text-lg bg-purple-600 text-white px-3 py-1 rounded-md">
-                    Pesan Sekarang
+                  <button className="self-end flex justify-start items-center gap-1 text-base sm:text-lg bg-purple-600 text-white px-3 py-1 rounded-md">
+                    Selengkapnya
                     <GoArrowUpRight className="w-5 h-5 text-white stroke-1" />
                   </button>
                 </div>
@@ -544,17 +577,22 @@ const page = () => {
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true }}
-        transition={{ duration: 1}}
+        transition={{ duration: 1 }}
         className="relative w-full h-fit flex flex-col justify-center items-center"
       >
-        <h1 className="text-6xl font-helveticaLight font-bold">FAQ</h1>
-        <h1 className="text-2xl text-gray-600">Pertanyaan seputar AceSolve</h1>
+        <h1 className="text-4xl sm:text-5xl lg:text-6xl font-helveticaLight font-bold">
+          FAQ
+        </h1>
+        <h1 className="sm:text-xl lg:text-2xl text-gray-600">
+          Pertanyaan seputar AceSolve
+        </h1>
         <div className="flex flex-col gap-10 my-10 w-full max-w-[60rem]">
           <div
             id="accordion-flush"
             data-accordion="collapse"
             data-active-classes="bg-white text-gray-900"
             data-inactive-classes="text-gray-500"
+            className="text-sm sm:text-base"
           >
             <h2
               id="accordion-flush-heading-1"
@@ -562,7 +600,7 @@ const page = () => {
             >
               <button
                 type="button"
-                className="flex items-center justify-between w-full py-5 font-medium rtl:text-right text-gray-800 border-b border-gray-400 gap-3"
+                className="flex items-center justify-between w-full py-5 font-medium text-start rtl:text-right text-gray-800 border-b border-gray-400 gap-3"
                 data-accordion-target="#accordion-flush-body-1"
                 aria-expanded="true"
                 aria-controls="accordion-flush-body-1"
@@ -591,11 +629,13 @@ const page = () => {
             <div
               id="accordion-flush-body-1"
               className={`${
-                openFaq == 1 ? "h-[19rem] opacity-100" : "h-0 opacity-0"
+                openFaq == 1
+                  ? "h-full sm:h-[19rem] opacity-100"
+                  : "h-0 opacity-0"
               } overflow-hidden transition-all duration-300 ease-in-out`}
               aria-labelledby="accordion-flush-heading-1"
             >
-              <div className="px-3 border-b border-gray-400">
+              <div className="sm:px-3 border-b border-gray-400">
                 <ul>
                   <li className="flex justify-start items-center my-1 gap-2 border-y py-2 hover:bg-purple-100 px-2">
                     <span className="bg-purple-600 rounded-sm p-0.5 px-1 text-white">
@@ -642,7 +682,7 @@ const page = () => {
             >
               <button
                 type="button"
-                className="flex items-center justify-between w-full py-5 font-medium rtl:text-right text-gray-800 border-b border-gray-400 gap-3"
+                className="flex items-center justify-between w-full py-5 font-medium text-start rtl:text-right text-gray-800 border-b border-gray-400 gap-3"
                 data-accordion-target="#accordion-flush-body-1"
                 aria-expanded="true"
                 aria-controls="accordion-flush-body-1"
@@ -671,14 +711,16 @@ const page = () => {
             <div
               id="accordion-flush-body-1"
               className={`${
-                openFaq == 2 ? "h-[16rem] opacity-100" : "h-0 opacity-0"
+                openFaq == 2
+                  ? "h-full lg:h-[16rem] opacity-100"
+                  : "h-0 opacity-0"
               } overflow-hidden transition-all duration-300 ease-in-out`}
               aria-labelledby="accordion-flush-heading-1"
             >
-              <div className="px-3 border-b border-gray-400 flex gap-10 h-full py-3">
-                <div className="w-1/2 h-full border border-purple-600 rounded-md p-5">
+              <div className="px-3 border-b border-gray-400 flex flex-col lg:flex-row gap-5 lg:gap-10 h-full py-3">
+                <div className="w-full lg:w-1/2 h-full border border-purple-600 rounded-md p-5">
                   <h1 className="text-2xl ">Wordpress</h1>
-                  <ul className="my-1">
+                  <ul className="my-1 grid grid-cols-1 md:grid-cols-2 lg:flex lg:flex-col">
                     <li className="flex justify-start items-center gap-2">
                       <FaCheck className="text-purple-600" /> Durasi Pengerjaan
                       Lebih Cepat
@@ -704,9 +746,9 @@ const page = () => {
                     </li>
                   </ul>
                 </div>
-                <div className="w-1/2 h-full border border-purple-600 rounded-md p-5">
+                <div className="w-full lg:w-1/2 h-full border border-purple-600 rounded-md p-5">
                   <h1 className="text-2xl ">Non-Wordpress</h1>
-                  <ul className="my-1">
+                  <ul className="my-1 grid grid-cols-1 md:grid-cols-2 lg:flex lg:flex-col">
                     <li className="flex justify-start items-center gap-2">
                       <FaCheck className="text-purple-600" /> Kebutuhan / Fitur
                       Spesifik
@@ -724,9 +766,9 @@ const page = () => {
                       Pemrograman
                     </li>
                     <li className="flex justify-start items-center gap-2">
-                      <FaCheck className="text-purple-600" /> Cocok untuk
-                      website skala tertutup (Private), skala menengah hingga
-                      skala besar
+                      <FaCheck className="text-purple-600 w-6 h-6 sm:w-4.5 sm:h-4.5 md:w-6 md:h-6" />{" "}
+                      Cocok untuk website skala tertutup (Private), skala
+                      menengah hingga skala besar
                     </li>
                   </ul>
                 </div>
@@ -738,7 +780,7 @@ const page = () => {
             >
               <button
                 type="button"
-                className="flex items-center justify-between w-full py-5 font-medium rtl:text-right text-gray-800 border-b border-gray-400 gap-3"
+                className="flex items-center justify-between w-full py-5 font-medium text-start rtl:text-right text-gray-800 border-b border-gray-400 gap-3"
                 data-accordion-target="#accordion-flush-body-1"
                 aria-expanded="true"
                 aria-controls="accordion-flush-body-1"
@@ -774,7 +816,7 @@ const page = () => {
               } overflow-hidden transition-all duration-300 ease-in-out`}
               aria-labelledby="accordion-flush-heading-1"
             >
-              <div className="px-3 border-b border-gray-400">
+              <div className="sm:px-3 border-b border-gray-400">
                 <ul>
                   <li className="flex justify-start items-center my-1 gap-2 border-y py-2 hover:bg-purple-100 px-2">
                     <span className="bg-purple-600 rounded-sm p-0.5 px-1 text-white">

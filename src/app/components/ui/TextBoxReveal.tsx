@@ -6,7 +6,7 @@ interface Props {
   width?: "fit-content" | "100%" | "full";
 }
 
-export const TextBoxReveal = ({ children, width = "fit-content" }: Props) => {
+export const TextBoxReveal = ({ children, width }: Props) => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
 
@@ -21,7 +21,15 @@ export const TextBoxReveal = ({ children, width = "fit-content" }: Props) => {
   }, [isInView]);
 
   return (
-    <div ref={ref} style={{ position: "relative", width, height: "auto", overflow: "hidden" }}>
+    <div
+      ref={ref}
+      style={{
+        position: "relative",
+        width,
+        height: "auto",
+        overflow: "hidden",
+      }}
+    >
       <motion.div
         variants={{
           hidden: { opacity: 0, y: 75 },
@@ -42,8 +50,7 @@ export const TextBoxReveal = ({ children, width = "fit-content" }: Props) => {
         animate={slideControls}
         transition={{ duration: 0.5, ease: "easeIn" }}
         className="absolute top-0 bottom-0 left-0 right-0 bg-purple-200 z-20"
-      > 
-      </motion.div>
+      ></motion.div>
     </div>
   );
 };
