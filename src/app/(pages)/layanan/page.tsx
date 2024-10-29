@@ -66,7 +66,7 @@ const page = () => {
             initial="hidden"
             animate={controls}
             transition={{ duration: 1, delay: 0.5 }}
-            src="Mockup2.png"
+            src="/Mockup2.png"
             className="h-[45vh] sm:h-[55vh] mt-5"
           />
           <div className="absolute -bottom-[40%] h-[15vh] w-full opacity-10 animate-float">
@@ -79,7 +79,7 @@ const page = () => {
               }}
               viewport={{ once: true }}
               transition={{ duration: 3, delay: 1.5 }}
-              src="Mockup2.png"
+              src="/Mockup2.png"
               className="h-full w-full object-cover object-bottom -scale-y-100 blur-[2px]"
             />
             <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-t from-white to-transparent"></div>

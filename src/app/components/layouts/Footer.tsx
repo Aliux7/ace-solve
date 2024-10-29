@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import Link from "next/link";
 import React from "react";
 import { FaInstagram } from "react-icons/fa";
@@ -8,11 +8,6 @@ import { TextBoxReveal } from "../ui/TextBoxReveal";
 const Footer = () => {
   return (
     <div className="w-full flex flex-col justify-end items-center h-full px-3 sm:px-6 lg:px-10 mt-60">
-      {/* <TextBoxReveal>
-        <h5 className=" text-[23.5vw] leading-[0.85] -tracking-[0.8vw] overflow-y-hidden w-full text-purple-200">
-          AceSolve
-        </h5>
-      </TextBoxReveal> */}
       <div className="border-t w-full py-3 pb-5 sm:py-5 flex flex-col ">
         <div className="flex flex-col-reverse sm:flex-row gap-3 justify-between items-center text-base md:text-lg text-gray-500">
           <p>© 2024 AceSolve. All rights reserved.</p>
@@ -40,4 +35,4 @@ const Footer = () => {
   );
 };
 
-export default Footer;    
+export default Footer;

@@ -167,7 +167,7 @@ export default function Home() {
           </div>
         </div>
         <motion.img
-          src="Mockup3.png"
+          src="/Mockup3.png"
           variants={{
             hidden: { opacity: 0, x: -25 },
             visible: { opacity: 1, x: 0 },
@@ -178,7 +178,7 @@ export default function Home() {
           className="hidden lg:block max-h-[100vh] h-auto w-auto max-w-[45vw] object-cover rounded-md"
         />
         <motion.img
-          src="Mockup1.png"
+          src="/Mockup1.png"
           variants={{
             hidden: { opacity: 0, x: 25 },
             visible: { opacity: 0.1, x: 0 },
