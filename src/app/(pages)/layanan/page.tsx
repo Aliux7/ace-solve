@@ -7,6 +7,7 @@ import CountUp from "@/app/components/ui/CountUp";
 import { TextBoxReveal } from "@/app/components/ui/TextBoxReveal";
 import LocomotiveScroll from "locomotive-scroll";
 import splitStringUsingRegex from "@/app/utlis/splitStringUsingRegex";
+import Link from "next/link";
 
 const page = () => {
   const controls = useAnimation();
@@ -213,7 +214,7 @@ const page = () => {
       </section>
       <section className="relative w-full min-h-screen h-full flex flex-col justify-start items-start">
         <div className="flex flex-col xl:flex-row gap-10">
-          <div className="w-full xl:w-1/2">
+          <div className="w-full xl:w-1/2" id="landing-page">
             <TextBoxReveal>
               <h3 className="overflow-hidden sm:text-xl px-0.5 lg:px-1.5">
                 layanan
@@ -302,15 +303,18 @@ const page = () => {
                       <sub className="text-sm"> / Tahun</sub>
                     </h1>
                   </div>
-                  <button className="self-end flex justify-start items-center gap-1 text-base sm:text-lg bg-purple-600 text-white px-3 py-1 rounded-md">
-                    Selengkapnya
+                  <Link
+                    href="https://wa.me/6283831005780?text=Halo%20saya%20tertarik%20dengan%20layanan%20jasa%20pembuatan%20website%20untuk%20Paket%20Landing%20Page."
+                    className="self-end flex justify-start items-center gap-1 text-base sm:text-lg bg-purple-600 text-white px-3 py-1 rounded-md"
+                  >
+                    Pesan Sekarang
                     <GoArrowUpRight className="w-5 h-5 text-white stroke-1" />
-                  </button>
+                  </Link>
                 </div>
               </div>
             </motion.div>
           </div>
-          <div className="w-full xl:w-1/2 xl:mt-[25%]">
+          <div className="w-full xl:w-1/2 xl:mt-[25%]" id="company-profile">
             <TextBoxReveal>
               <h3 className="overflow-hidden sm:text-xl px-0.5 lg:px-1.5">
                 layanan
@@ -398,17 +402,20 @@ const page = () => {
                       <sub className="text-sm"> / Tahun</sub>
                     </h1>
                   </div>
-                  <button className="self-end flex justify-start items-center gap-1 text-base sm:text-lg bg-purple-600 text-white px-3 py-1 rounded-md">
-                    Selengkapnya
+                  <Link
+                    href="https://wa.me/6283831005780?text=Halo%20saya%20tertarik%20dengan%20layanan%20jasa%20pembuatan%20website%20untuk%20Paket%20Company%20Profile."
+                    className="self-end flex justify-start items-center gap-1 text-base sm:text-lg bg-purple-600 text-white px-3 py-1 rounded-md"
+                  >
+                    Pesan Sekarang
                     <GoArrowUpRight className="w-5 h-5 text-white stroke-1" />
-                  </button>
+                  </Link>
                 </div>
               </div>
             </motion.div>
           </div>
         </div>
         <div className="flex flex-col xl:flex-row gap-10 mt-10 xl:mt-0 mb-10">
-          <div className="w-full xl:w-1/2">
+          <div className="w-full xl:w-1/2" id="protofilo-page">
             <TextBoxReveal>
               <h3 className="overflow-hidden sm:text-xl px-0.5 lg:px-1.5">
                 layanan
@@ -486,15 +493,18 @@ const page = () => {
                       <sub className="text-sm"> / Tahun</sub>
                     </h1>
                   </div>
-                  <button className="self-end flex justify-start items-center gap-1 text-base sm:text-lg bg-purple-600 text-white px-3 py-1 rounded-md">
-                    Selengkapnya
+                  <Link
+                    href="https://wa.me/6283831005780?text=Halo%20saya%20tertarik%20dengan%20layanan%20jasa%20pembuatan%20website%20untuk%20Paket%20Portofolio."
+                    className="self-end flex justify-start items-center gap-1 text-base sm:text-lg bg-purple-600 text-white px-3 py-1 rounded-md"
+                  >
+                    Pesan Sekarang
                     <GoArrowUpRight className="w-5 h-5 text-white stroke-1" />
-                  </button>
+                  </Link>
                 </div>
               </div>
             </motion.div>
           </div>
-          <div className="w-full xl:w-1/2 xl:mt-[25%]">
+          <div className="w-full xl:w-1/2 xl:mt-[25%]" id="custom-page">
             <TextBoxReveal>
               <h3 className="overflow-hidden sm:text-xl px-0.5 lg:px-1.5">
                 layanan
@@ -559,10 +569,13 @@ const page = () => {
                     <h3>Harga Mulai Dari</h3>
                     <h1 className="text-3xl sm:text-4xl my-2">Harga Khusus</h1>
                   </div>
-                  <button className="self-end flex justify-start items-center gap-1 text-base sm:text-lg bg-purple-600 text-white px-3 py-1 rounded-md">
-                    Selengkapnya
+                  <Link
+                    href="https://wa.me/6283831005780?text=Halo%20saya%20tertarik%20dengan%20layanan%20jasa%20pembuatan%20website%20untuk%20Paket%20Custom."
+                    className="self-end flex justify-start items-center gap-1 text-base sm:text-lg bg-purple-600 text-white px-3 py-1 rounded-md"
+                  >
+                    Pesan Sekarang
                     <GoArrowUpRight className="w-5 h-5 text-white stroke-1" />
-                  </button>
+                  </Link>
                 </div>
               </div>
             </motion.div>

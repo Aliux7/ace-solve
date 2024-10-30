@@ -137,7 +137,7 @@ export default function Home() {
           </motion.h3>
           <div className="flex justify-center lg:justify-start items-center gap-2 sm:gap-5 my-1">
             <motion.a
-              href="#"
+              href="https://api.whatsapp.com/send?phone=6283831005780"
               variants={{
                 hidden: { opacity: 0, y: 25 },
                 visible: { opacity: 1, y: 0 },
@@ -151,7 +151,7 @@ export default function Home() {
               <FaWhatsapp className="fill-gray-600 stroke-1" /> Konsultasi
             </motion.a>
             <motion.a
-              href="/template"
+              href="/layanan"
               variants={{
                 hidden: { opacity: 0, y: 25 },
                 visible: { opacity: 1, y: 0 },
@@ -353,7 +353,7 @@ export default function Home() {
       </section>
       <section className="relative w-full h-full min-h-screen flex flex-col justify-center items-start text-center sm:text-start">
         <TextBoxReveal width="100%">
-          <h3 className="font-helveticaLight text-xl w-full">pilihan</h3>
+          <h3 className="font-helveticaLight text-xl w-full px-1">pilihan</h3>
         </TextBoxReveal>
         <TextBoxReveal width="100%">
           <h1 className="font-helveticaLight text-4xl sm:text-6xl lg:text-7xl pb-1">
@@ -437,10 +437,13 @@ export default function Home() {
                     <sub className="text-sm"> / Tahun</sub>
                   </h1>
                 </div>
-                <button className="self-end flex justify-start items-center gap-1 text-base sm:text-lg bg-purple-600 text-white px-3 py-1 rounded-md">
+                <Link
+                  href="/layanan/#landing-page"
+                  className="self-end flex justify-start items-center gap-1 text-base sm:text-lg bg-purple-600 text-white px-3 py-1 rounded-md"
+                >
                   Selengkapnya
                   <GoArrowUpRight className="w-5 h-5 text-white stroke-1" />
-                </button>
+                </Link>
               </div>
             </div>
           </motion.li>
@@ -524,10 +527,13 @@ export default function Home() {
                     <sub className="text-sm"> / Tahun</sub>
                   </h1>
                 </div>
-                <button className="self-end flex justify-start items-center gap-1 text-base sm:text-lg bg-purple-600 text-white px-3 py-1 rounded-md">
+                <Link
+                  href="/layanan/#company-profile"
+                  className="self-end flex justify-start items-center gap-1 text-base sm:text-lg bg-purple-600 text-white px-3 py-1 rounded-md"
+                >
                   Selengkapnya
                   <GoArrowUpRight className="w-5 h-5 text-white stroke-1" />
-                </button>
+                </Link>
               </div>
             </div>
           </motion.li>
@@ -587,10 +593,13 @@ export default function Home() {
                   <h3>Harga Mulai Dari</h3>
                   <h1 className="text-3xl sm:text-4xl my-2">Harga Khusus</h1>
                 </div>
-                <button className="self-end flex justify-start items-center gap-1 text-base sm:text-lg bg-purple-600 text-white px-3 py-1 rounded-md">
+                <Link
+                  href="/layanan/#custom-page"
+                  className="self-end flex justify-start items-center gap-1 text-base sm:text-lg bg-purple-600 text-white px-3 py-1 rounded-md"
+                >
                   Selengkapnya
                   <GoArrowUpRight className="w-5 h-5 text-white stroke-1" />
-                </button>
+                </Link>
               </div>
             </div>
           </motion.li>
