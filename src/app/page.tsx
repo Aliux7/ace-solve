@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import { motion, useAnimation } from "framer-motion";
 import LocomotiveScroll from "locomotive-scroll";
 import { FaWhatsapp } from "react-icons/fa";
-import { GoArrowUpRight, GoProjectTemplate } from "react-icons/go";
+import { GoArrowUp, GoArrowUpRight, GoProjectTemplate } from "react-icons/go";
 import { FaCheck } from "react-icons/fa6";
 import splitStringUsingRegex from "./utlis/splitStringUsingRegex";
 import CountUp from "./components/ui/CountUp";
@@ -137,7 +137,7 @@ export default function Home() {
           </motion.h3>
           <div className="flex justify-center lg:justify-start items-center gap-2 sm:gap-5 my-1">
             <motion.a
-              href="https://api.whatsapp.com/send?phone=6283831005780"
+              href="https://api.whatsapp.com/send?phone=6285173135780"
               variants={{
                 hidden: { opacity: 0, y: 25 },
                 visible: { opacity: 1, y: 0 },
@@ -167,7 +167,7 @@ export default function Home() {
           </div>
         </div>
         <motion.img
-          src="/Mockup3.png"
+          src="/Mockup3.webp"
           variants={{
             hidden: { opacity: 0, x: -25 },
             visible: { opacity: 1, x: 0 },
@@ -178,7 +178,7 @@ export default function Home() {
           className="hidden lg:block max-h-[100vh] h-auto w-auto max-w-[45vw] object-cover rounded-md"
         />
         <motion.img
-          src="/Mockup1.png"
+          src="/Mockup1.webp"
           variants={{
             hidden: { opacity: 0, x: 25 },
             visible: { opacity: 0.1, x: 0 },
@@ -205,6 +205,42 @@ export default function Home() {
               <span className="text-purple-600">+</span>
             </h1>
             <h1 className="text-sm">Projects Terselesaikan</h1>
+          </motion.div>
+        </div>
+        <div className="absolute bottom-5 left-1 text-start flex justify-center items-end gap-44">
+          <motion.div
+            variants={{
+              hidden: { opacity: 0 },
+              visible: { opacity: 1 },
+            }}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            transition={{ duration: 1, delay: 0.5 }}
+          >
+            {" "}
+            <motion.a
+              href="/CompanyProfile.pdf"
+              variants={{
+                hidden: { opacity: 0, y: 25 },
+                visible: { opacity: 1, y: 0 },
+              }}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true }}
+              transition={{ duration: 1, delay: 1 }}
+              className="group text-lg sm:text-xl flex justify-center items-center gap-2 border-b relative py-1 before:content-[''] before:w-full before:h-[1.5px] before:absolute before:left-0 before:bottom-0 before:bg-purple-500 before:transition-transform before:ease-in-out before:duration-[500ms] before:scale-x-0 before:scale-y-100 before:origin-right hover:before:scale-x-100 hover:before:origin-left"
+            >
+              {" "}
+              Download PDF
+              <div className="h-3 sm:h-5 overflow-hidden">
+                <div className="flex flex-col rotate-45 -translate-x-2 sm:-translate-x-3 -translate-y-1 gap-3 group-hover:translate-x-2 sm:group-hover:translate-x-3 group-hover:-translate-y-5 sm:group-hover:-translate-y-7 transition-all duration-500 ease-in">
+                  <GoArrowUp className="w-3 h-3 sm:w-5 sm:h-5 text-purple-600 stroke-1" />
+                  <GoArrowUp className="w-3 h-3 sm:w-5 sm:h-5 text-purple-600 stroke-1" />
+                </div>
+              </div>
+            </motion.a>
+            <h1 className="text-sm">Profil Perusahaan</h1>
           </motion.div>
         </div>
       </section>
@@ -433,6 +469,7 @@ export default function Home() {
                 <div>
                   <h3>Harga Mulai Dari</h3>
                   <h1 className="text-3xl sm:text-4xl my-2">
+                    {/* <sup className="text-xl">Rp</sup> *.000.000 */}
                     <sup className="text-xl">Rp</sup> 680.000
                     <sub className="text-sm"> / Tahun</sub>
                   </h1>
@@ -523,6 +560,7 @@ export default function Home() {
                 <div>
                   <h3>Harga Mulai Dari</h3>
                   <h1 className="text-3xl sm:text-4xl my-2">
+                    {/* <sup className="text-xl">Rp</sup> *.000.000 */}
                     <sup className="text-xl">Rp</sup> 750.000
                     <sub className="text-sm"> / Tahun</sub>
                   </h1>
@@ -623,6 +661,86 @@ export default function Home() {
             <GoArrowUpRight className="w-5 h-5 text-purple-600 stroke-1" />
           </Link>
         </motion.div>
+      </section>
+      <section className="relative w-full h-full min-h-screen flex flex-col justify-center items-start text-center sm:text-start">
+        <TextBoxReveal width="100%">
+          <h3 className="font-helveticaLight text-xl w-full px-1">Tersedia</h3>
+        </TextBoxReveal>
+        <TextBoxReveal width="100%">
+          <h1 className="font-helveticaLight text-4xl sm:text-6xl lg:text-7xl pb-1">
+            Lokasi Cabang
+          </h1>
+        </TextBoxReveal>
+        <div className="mt-5 w-full">
+          <TextBoxReveal width="full">
+            <div className="w-full border-y px-3 lg:px-5 py-5 md:py-7 flex flex-col lg:flex-row justify-between items-start gap-6 sm:gap-6 md:gap-14 lg:gap-20 xl:gap-32 hover:border-y-purple-300 hover:bg-purple-100 transition-all duration-300 ease-in-out">
+              <div className="flex flex-col sm:flex-row justify-start items-start gap-5 h-[300px] flex-1 w-full sm:w-auto">
+                <h1 className="hidden sm:block text-3xl sm:text-4xl md:text-5xl lg:text-6xl">
+                  01/
+                </h1>
+                <div className="flex flex-col gap-2 text-center sm:text-start justify-between w-full h-full">
+                  <h1 className="text-3xl lg:text-4xl">AceSolve Jakarta</h1>
+                  <div className="flex flex-col lg:flex-row justify-between items-center sm:items-start lg:items-center gap-5 w-full flex-wrap">
+                    <div className="flex flex-col text-gray-600">
+                      <span className="text-nowrap">
+                        No. 19 E, Jl. Setia Budi Timur, Kuningan, Setia Budi
+                      </span>
+                      <span className="text-nowrap">
+                        Kecamatan Setiabudi, Kota Jakarta Selatan
+                      </span>
+                      <span className="text-nowrap">Ibukota Jakarta 12910</span>
+                    </div>
+                    <div className="flex flex-col text-gray-600">
+                      <span className="text-nowrap">24 Jam</span>
+                      <span className="text-nowrap">+62 8517-3135-780</span>
+                      <span className="text-nowrap">www.acesolve.com</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <iframe
+                className="w-full lg:w-[450px] xl:w-[550px]"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3957.8022904495733!2d112.69108109999999!3d-7.2633279!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7ffa92de8b515%3A0x255e339c291d8e36!2sJASA%20WEBSITE%20%26%20APLIKASI%20SURABAYA%20-%20ACESOLVE!5e0!3m2!1sen!2sid!4v1755517206391!5m2!1sen!2sid"
+                height="300"
+                loading="lazy"
+              ></iframe>
+            </div>
+          </TextBoxReveal>
+          <TextBoxReveal width="full">
+            <div className="w-full border-y px-3 lg:px-5 py-5 md:py-7 flex flex-col lg:flex-row justify-between items-start gap-6 sm:gap-6 md:gap-14 lg:gap-20 xl:gap-32 hover:border-y-purple-300 hover:bg-purple-100 transition-all duration-300 ease-in-out">
+              <div className="flex flex-col sm:flex-row justify-start items-start gap-5 h-[300px] flex-1 w-full sm:w-auto">
+                <h1 className="hidden sm:block text-3xl sm:text-4xl md:text-5xl lg:text-6xl">
+                  02/
+                </h1>
+                <div className="flex flex-col gap-2 text-center sm:text-start justify-between w-full h-full">
+                  <h1 className="text-3xl lg:text-4xl">AceSolve Surabaya</h1>
+                  <div className="flex flex-col lg:flex-row justify-between items-center sm:items-start lg:items-center gap-5 w-full flex-wrap">
+                    <div className="flex flex-col text-gray-600">
+                      <span className="text-nowrap">
+                        De Victory, Jl. Satelit Utara VI, Tanjungsari
+                      </span>
+                      <span className="text-nowrap">
+                        Kec. Sukomanunggal, Surabaya
+                      </span>
+                      <span className="text-nowrap"> Jawa Timur 60187</span>
+                    </div>
+                    <div className="flex flex-col text-gray-600">
+                      <span className="text-nowrap">24 Jam</span>
+                      <span className="text-nowrap">+62 8517-3135-780</span>
+                      <span className="text-nowrap">www.acesolve.com</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <iframe
+                className="w-full lg:w-[450px] xl:w-[550px]"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.4175249023806!2d106.82808399999999!3d-6.208531300000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f578613bb2cb%3A0x6e79e2887a98722b!2sJASA%20WEBSITE%20%26%20APLIKASI%20JAKARTA%20-%20ACESOLVE!5e0!3m2!1sen!2sid!4v1755516125601!5m2!1sen!2sid"
+                height="300"
+                loading="lazy"
+              ></iframe>
+            </div>
+          </TextBoxReveal>
+        </div>
       </section>
     </motion.main>
   );

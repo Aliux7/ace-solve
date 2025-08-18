@@ -67,7 +67,7 @@ const page = () => {
             initial="hidden"
             animate={controls}
             transition={{ duration: 1, delay: 0.5 }}
-            src="/Mockup2.png"
+            src="/Mockup2.webp"
             className="h-[45vh] sm:h-[55vh] mt-5"
           />
           <div className="absolute -bottom-[40%] h-[15vh] w-full opacity-10 animate-float">
@@ -80,7 +80,7 @@ const page = () => {
               }}
               viewport={{ once: true }}
               transition={{ duration: 3, delay: 1.5 }}
-              src="/Mockup2.png"
+              src="/Mockup2.webp"
               className="h-full w-full object-cover object-bottom -scale-y-100 blur-[2px]"
             />
             <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-t from-white to-transparent"></div>
@@ -299,12 +299,13 @@ const page = () => {
                   <div>
                     <h3>Harga Mulai Dari</h3>
                     <h1 className="text-3xl sm:text-4xl my-2">
+                      {/* <sup className="text-xl">Rp</sup> *.000.000 */}
                       <sup className="text-xl">Rp</sup> 680.000
                       <sub className="text-sm"> / Tahun</sub>
                     </h1>
                   </div>
                   <Link
-                    href="https://wa.me/6283831005780?text=Halo%20saya%20tertarik%20dengan%20layanan%20jasa%20pembuatan%20website%20untuk%20Paket%20Landing%20Page."
+                    href="https://wa.me/6285173135780?text=Halo%20saya%20tertarik%20dengan%20layanan%20jasa%20pembuatan%20website%20untuk%20Paket%20Landing%20Page."
                     className="self-end flex justify-start items-center gap-1 text-base sm:text-lg bg-purple-600 text-white px-3 py-1 rounded-md"
                   >
                     Pesan Sekarang
@@ -398,12 +399,13 @@ const page = () => {
                   <div>
                     <h3>Harga Mulai Dari</h3>
                     <h1 className="text-3xl sm:text-4xl my-2">
+                      {/* <sup className="text-xl">Rp</sup> *.000.000 */}
                       <sup className="text-xl">Rp</sup> 750.000
                       <sub className="text-sm"> / Tahun</sub>
                     </h1>
                   </div>
                   <Link
-                    href="https://wa.me/6283831005780?text=Halo%20saya%20tertarik%20dengan%20layanan%20jasa%20pembuatan%20website%20untuk%20Paket%20Company%20Profile."
+                    href="https://wa.me/6285173135780?text=Halo%20saya%20tertarik%20dengan%20layanan%20jasa%20pembuatan%20website%20untuk%20Paket%20Company%20Profile."
                     className="self-end flex justify-start items-center gap-1 text-base sm:text-lg bg-purple-600 text-white px-3 py-1 rounded-md"
                   >
                     Pesan Sekarang
@@ -489,12 +491,13 @@ const page = () => {
                   <div>
                     <h3>Harga Mulai Dari</h3>
                     <h1 className="text-3xl sm:text-4xl my-2">
+                      {/* <sup className="text-xl">Rp</sup> *.000.000 */}
                       <sup className="text-xl">Rp</sup> 620.000
                       <sub className="text-sm"> / Tahun</sub>
                     </h1>
                   </div>
                   <Link
-                    href="https://wa.me/6283831005780?text=Halo%20saya%20tertarik%20dengan%20layanan%20jasa%20pembuatan%20website%20untuk%20Paket%20Portofolio."
+                    href="https://wa.me/6285173135780?text=Halo%20saya%20tertarik%20dengan%20layanan%20jasa%20pembuatan%20website%20untuk%20Paket%20Portofolio."
                     className="self-end flex justify-start items-center gap-1 text-base sm:text-lg bg-purple-600 text-white px-3 py-1 rounded-md"
                   >
                     Pesan Sekarang
@@ -570,7 +573,7 @@ const page = () => {
                     <h1 className="text-3xl sm:text-4xl my-2">Harga Khusus</h1>
                   </div>
                   <Link
-                    href="https://wa.me/6283831005780?text=Halo%20saya%20tertarik%20dengan%20layanan%20jasa%20pembuatan%20website%20untuk%20Paket%20Custom."
+                    href="https://wa.me/6285173135780?text=Halo%20saya%20tertarik%20dengan%20layanan%20jasa%20pembuatan%20website%20untuk%20Paket%20Custom."
                     className="self-end flex justify-start items-center gap-1 text-base sm:text-lg bg-purple-600 text-white px-3 py-1 rounded-md"
                   >
                     Pesan Sekarang

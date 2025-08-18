@@ -9,6 +9,7 @@ import {
 } from "react-icons/go";
 import LocomotiveScroll from "locomotive-scroll";
 import splitStringUsingRegex from "@/app/utlis/splitStringUsingRegex";
+import Image from "next/image";
 
 const page = () => {
   const controls = useAnimation();
@@ -42,6 +43,18 @@ const page = () => {
       title: "AbsenKu",
       description: "Website Kustom Absensi Perusahaan",
       link: "https://www.absenku.site/",
+    },
+    {
+      image: "/porto/porto5.webp",
+      title: "Modelano",
+      description: "Website Voting Untuk Anak-Anak",
+      link: "https://www.modelanokidsvote.com/",
+    },
+    {
+      image: "/porto/porto6.webp",
+      title: "Cashwise",
+      description: "Aplikasi Android Mengatur Keuangan dan Investasi",
+      link: "https://expo.dev/accounts/aliux7/projects/cashwise/builds/276b79c5-9b33-4739-85ea-346358eddd6f",
     },
   ];
 
@@ -105,7 +118,7 @@ const page = () => {
               </motion.span>
             ))}
           </div>
-          <div className="overflow-hidden font-helveticaLight text-[2.5rem] leading-8 sm:text-7xl lg:text-8xl pb-1">
+          <div className="overflow-hidden font-helveticaLight text-[2.5rem] leading-10 sm:text-7xl lg:text-8xl pb-1">
             {firstHeading.map((char, index) => (
               <motion.span
                 key={index}
@@ -191,10 +204,14 @@ const page = () => {
               transition={{ duration: 1, delay: (index / 4) % 0.5 }}
               className="border flex flex-col rounded-md overflow-hidden"
             >
-              <img
-                src={portofolio.image}
-                className="w-full h-80 sm:h-[30rem] md:h-80 lg:h-96 xl:h-[30rem] object-cover"
-              />
+              <div className="relative w-full h-80 sm:h-[30rem] md:h-80 lg:h-96 xl:h-[30rem]">
+                <Image
+                  src={portofolio.image}
+                  alt="Portofolio"
+                  fill
+                  className="object-cover"
+                />
+              </div>
               <div className="relative flex flex-col p-5 justify-center items-start pb-16 sm:pb-5 md:pb-16 lg:pb-5">
                 <h1 className="text-3xl font-semibold">{portofolio.title}</h1>
                 <h3 className="text-sm">{portofolio.description}</h3>
