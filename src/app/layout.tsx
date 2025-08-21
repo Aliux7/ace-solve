@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     title: "AceSolve - Jasa Pembuatan Website & Aplikasi",
     description:
       "Solusi terbaik untuk pembuatan website & aplikasi profesional bagi bisnis Anda.",
-    images: ["/Mockup2.webp"],
+    images: ["/logo/LogoWhite.png"],
   },
   openGraph: {
     images: ["/opengraph-image.png"],
