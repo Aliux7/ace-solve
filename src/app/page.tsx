@@ -435,8 +435,7 @@ export default function Home() {
                     <FaCheck className="text-purple-600" /> Gratis Maintenance
                   </li>
                   <li className="flex justify-start items-center gap-2">
-                    <FaCheck className="text-purple-600" /> Wordpress / Non
-                    Wordpress
+                    <FaCheck className="text-purple-600" /> Non Wordpress
                   </li>
                   <li className="flex justify-start items-center gap-2">
                     <FaCheck className="text-purple-600" /> Integrasi Media
@@ -458,7 +457,7 @@ export default function Home() {
                     <FaCheck className="text-purple-600" /> Mulai Dari 1 Halaman
                   </li>
                   <li className="flex justify-start items-center gap-2">
-                    <FaCheck className="text-purple-600" /> Mulai Dari 2x Revisi
+                    <FaCheck className="text-purple-600" /> Mulai Dari 5x Revisi
                   </li>
                   <li className="flex justify-start items-center gap-2">
                     <FaCheck className="text-purple-600" /> Design Premium
@@ -469,9 +468,8 @@ export default function Home() {
                 <div>
                   <h3>Harga Mulai Dari</h3>
                   <h1 className="text-3xl sm:text-4xl my-2">
-                    {/* <sup className="text-xl">Rp</sup> *.000.000 */}
-                    <sup className="text-xl">Rp</sup> 680.000
-                    <sub className="text-sm"> / Tahun</sub>
+                    <sup className="text-xl">Rp</sup> 1.000.000
+                    <sub className="text-sm"> / Order</sub>
                   </h1>
                 </div>
                 <Link
@@ -525,8 +523,7 @@ export default function Home() {
                     <FaCheck className="text-purple-600" /> Gratis Maintenance
                   </li>
                   <li className="flex justify-start items-center gap-2">
-                    <FaCheck className="text-purple-600" /> Wordpress / Non
-                    Wordpress
+                    <FaCheck className="text-purple-600" /> Non Wordpress
                   </li>
                   <li className="flex justify-start items-center gap-2">
                     <FaCheck className="text-purple-600" /> Integrasi Media
@@ -542,10 +539,10 @@ export default function Home() {
                     <FaCheck className="text-purple-600" /> Copywriting
                   </li>
                   <li className="flex justify-start items-center gap-2">
-                    <FaCheck className="text-purple-600" /> Mulai Dari 1 Halaman
+                    <FaCheck className="text-purple-600" /> Mulai Dari 2 Halaman
                   </li>
                   <li className="flex justify-start items-center gap-2">
-                    <FaCheck className="text-purple-600" /> Mulai Dari 2x Revisi
+                    <FaCheck className="text-purple-600" /> Mulai Dari 5x Revisi
                   </li>
                   <li className="flex justify-start items-center gap-2">
                     <FaCheck className="text-purple-600" /> Design Premium
@@ -560,9 +557,8 @@ export default function Home() {
                 <div>
                   <h3>Harga Mulai Dari</h3>
                   <h1 className="text-3xl sm:text-4xl my-2">
-                    {/* <sup className="text-xl">Rp</sup> *.000.000 */}
-                    <sup className="text-xl">Rp</sup> 750.000
-                    <sub className="text-sm"> / Tahun</sub>
+                    <sup className="text-xl">Rp</sup> 1.500.000
+                    <sub className="text-sm"> / Order</sub>
                   </h1>
                 </div>
                 <Link

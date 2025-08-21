@@ -94,7 +94,7 @@ const Header = () => {
             Portofolio
           </Link>
         </li>
-        <li
+        {/* <li
           className={`${
             openHamburger
               ? "ml-0 transition-all duration-300 ease-in-out delay-[900ms]"
@@ -110,7 +110,7 @@ const Header = () => {
           >
             Template
           </Link>
-        </li>
+        </li> */}
       </ul>
       <div className="flex justify-center items-center w-fit gap-1 sm:gap-4">
         <Link

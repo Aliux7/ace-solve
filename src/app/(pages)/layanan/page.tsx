@@ -266,8 +266,7 @@ const page = () => {
                     <FaCheck className="text-purple-600" /> Gratis Maintenance
                   </li>
                   <li className="flex justify-start items-center gap-2">
-                    <FaCheck className="text-purple-600" /> Wordpress / Non
-                    Wordpress
+                    <FaCheck className="text-purple-600" /> Non Wordpress
                   </li>
                   <li className="flex justify-start items-center gap-2">
                     <FaCheck className="text-purple-600" /> Integrasi Media
@@ -289,7 +288,7 @@ const page = () => {
                     <FaCheck className="text-purple-600" /> Mulai Dari 1 Halaman
                   </li>
                   <li className="flex justify-start items-center gap-2">
-                    <FaCheck className="text-purple-600" /> Mulai Dari 2x Revisi
+                    <FaCheck className="text-purple-600" /> Mulai Dari 5x Revisi
                   </li>
                   <li className="flex justify-start items-center gap-2">
                     <FaCheck className="text-purple-600" /> Design Premium
@@ -299,9 +298,8 @@ const page = () => {
                   <div>
                     <h3>Harga Mulai Dari</h3>
                     <h1 className="text-3xl sm:text-4xl my-2">
-                      {/* <sup className="text-xl">Rp</sup> *.000.000 */}
-                      <sup className="text-xl">Rp</sup> 680.000
-                      <sub className="text-sm"> / Tahun</sub>
+                      <sup className="text-xl">Rp</sup> 1.000.000
+                      <sub className="text-sm"> / Order</sub>
                     </h1>
                   </div>
                   <Link
@@ -382,10 +380,10 @@ const page = () => {
                     <FaCheck className="text-purple-600" /> Copywriting
                   </li>
                   <li className="flex justify-start items-center gap-2">
-                    <FaCheck className="text-purple-600" /> Mulai Dari 1 Halaman
+                    <FaCheck className="text-purple-600" /> Mulai Dari 2 Halaman
                   </li>
                   <li className="flex justify-start items-center gap-2">
-                    <FaCheck className="text-purple-600" /> Mulai Dari 2x Revisi
+                    <FaCheck className="text-purple-600" /> Mulai Dari 5x Revisi
                   </li>
                   <li className="flex justify-start items-center gap-2">
                     <FaCheck className="text-purple-600" /> Design Premium
@@ -399,9 +397,8 @@ const page = () => {
                   <div>
                     <h3>Harga Mulai Dari</h3>
                     <h1 className="text-3xl sm:text-4xl my-2">
-                      {/* <sup className="text-xl">Rp</sup> *.000.000 */}
-                      <sup className="text-xl">Rp</sup> 750.000
-                      <sub className="text-sm"> / Tahun</sub>
+                      <sup className="text-xl">Rp</sup> 1.500.000
+                      <sub className="text-sm"> / Order</sub>
                     </h1>
                   </div>
                   <Link
@@ -464,8 +461,7 @@ const page = () => {
                     <FaCheck className="text-purple-600" /> Gratis Maintenance
                   </li>
                   <li className="flex justify-start items-center gap-2">
-                    <FaCheck className="text-purple-600" /> Wordpress / Non
-                    Wordpress
+                    <FaCheck className="text-purple-600" /> Non Wordpress
                   </li>
                   <li className="flex justify-start items-center gap-2">
                     <FaCheck className="text-purple-600" /> Integrasi Media
@@ -481,7 +477,7 @@ const page = () => {
                     <FaCheck className="text-purple-600" /> Mulai Dari 1 Halaman
                   </li>
                   <li className="flex justify-start items-center gap-2">
-                    <FaCheck className="text-purple-600" /> Mulai Dari 2x Revisi
+                    <FaCheck className="text-purple-600" /> Mulai Dari 5x Revisi
                   </li>
                   <li className="flex justify-start items-center gap-2">
                     <FaCheck className="text-purple-600" /> Design Premium
@@ -491,9 +487,8 @@ const page = () => {
                   <div>
                     <h3>Harga Mulai Dari</h3>
                     <h1 className="text-3xl sm:text-4xl my-2">
-                      {/* <sup className="text-xl">Rp</sup> *.000.000 */}
-                      <sup className="text-xl">Rp</sup> 620.000
-                      <sub className="text-sm"> / Tahun</sub>
+                      <sup className="text-xl">Rp</sup> 750.000
+                      <sub className="text-sm"> / Order</sub>
                     </h1>
                   </div>
                   <Link
@@ -574,6 +569,177 @@ const page = () => {
                   </div>
                   <Link
                     href="https://wa.me/6285173135780?text=Halo%20saya%20tertarik%20dengan%20layanan%20jasa%20pembuatan%20website%20untuk%20Paket%20Custom."
+                    className="self-end flex justify-start items-center gap-1 text-base sm:text-lg bg-purple-600 text-white px-3 py-1 rounded-md"
+                  >
+                    Pesan Sekarang
+                    <GoArrowUpRight className="w-5 h-5 text-white stroke-1" />
+                  </Link>
+                </div>
+              </div>
+            </motion.div>
+          </div>
+        </div>
+        <div className="flex flex-col xl:flex-row gap-10 mt-10 xl:mt-0 mb-10">
+          <div className="w-full xl:w-1/2" id="e-commerce-page">
+            <TextBoxReveal>
+              <h3 className="overflow-hidden sm:text-xl px-0.5 lg:px-1.5">
+                layanan
+              </h3>
+            </TextBoxReveal>
+            <TextBoxReveal>
+              <h1 className="text-4xl sm:text-5xl lg:text-6xl">Toko Online</h1>
+            </TextBoxReveal>
+            <motion.div
+              variants={{
+                hidden: { opacity: 0, y: 125 },
+                visible: { opacity: 1, y: 0 },
+              }}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true }}
+              transition={{ duration: 1 }}
+              className="relative w-full h-fit rounded-md px-5 py-7 flex my-5 justify-start items-start gap-5 border-purple-600 hover:bg-purple-50 border hover:shadow-md transition-colors duration-300 ease-in-out"
+            >
+              <div>
+                <h1 className="text-2xl sm:text-3xl lg:text-4xl">
+                  Paket Toko Online
+                </h1>
+                <p className="p-0.5">
+                  Layanan Pembuatan website toko online yang elegan dan
+                  profesional, dirancang untuk menampilkan produk Anda secara
+                  optimal, membantu Anda untuk membuka peluang baru.
+                </p>
+                <ul className="my-2 grid grid-cols-1 sm:grid-cols-2 ">
+                  <li className="flex justify-start items-center gap-2">
+                    <FaCheck className="text-purple-600" /> Gratis Hosting
+                  </li>
+                  <li className="flex justify-start items-center gap-2">
+                    <FaCheck className="text-purple-600" /> Gratis Domain
+                    (my.id)
+                  </li>
+                  <li className="flex justify-start items-center gap-2">
+                    <FaCheck className="text-purple-600" /> Gratis SSL
+                  </li>
+                  <li className="flex justify-start items-center gap-2">
+                    <FaCheck className="text-purple-600" /> Gratis Logo
+                  </li>
+                  <li className="flex justify-start items-center gap-2">
+                    <FaCheck className="text-purple-600" /> Gratis Maintenance
+                  </li>
+                  <li className="flex justify-start items-center gap-2">
+                    <FaCheck className="text-purple-600" /> Non Wordpress
+                  </li>
+                  <li className="flex justify-start items-center gap-2">
+                    <FaCheck className="text-purple-600" /> Integrasi Media
+                    Sosial
+                  </li>
+                  <li className="flex justify-start items-center gap-2">
+                    <FaCheck className="text-purple-600" /> Responsif
+                  </li>
+                  <li className="flex justify-start items-center gap-2">
+                    <FaCheck className="text-purple-600" /> SEO Friendly
+                  </li>
+                  <li className="flex justify-start items-center gap-2">
+                    <FaCheck className="text-purple-600" /> Mulai Dari 3 Halaman
+                  </li>
+                  <li className="flex justify-start items-center gap-2">
+                    <FaCheck className="text-purple-600" /> Mulai Dari 5x Revisi
+                  </li>
+                  <li className="flex justify-start items-center gap-2">
+                    <FaCheck className="text-purple-600" /> Design Premium
+                  </li>
+                </ul>
+                <div className="p-0.5 w-full pt-5 flex flex-col sm:flex-row xl:flex-col justify-between items-baseline">
+                  <div>
+                    <h3>Harga Mulai Dari</h3>
+                    <h1 className="text-3xl sm:text-4xl my-2">
+                      <sup className="text-xl">Rp</sup> 2.500.000
+                      <sub className="text-sm"> / Order</sub>
+                    </h1>
+                  </div>
+                  <Link
+                    href="https://wa.me/6285173135780?text=Halo%20saya%20tertarik%20dengan%20layanan%20jasa%20pembuatan%20website%20untuk%20Paket%20Toko%20Online."
+                    className="self-end flex justify-start items-center gap-1 text-base sm:text-lg bg-purple-600 text-white px-3 py-1 rounded-md"
+                  >
+                    Pesan Sekarang
+                    <GoArrowUpRight className="w-5 h-5 text-white stroke-1" />
+                  </Link>
+                </div>
+              </div>
+            </motion.div>
+          </div>
+          <div className="w-full xl:w-1/2 xl:mt-[25%]" id="custom-page">
+            <TextBoxReveal>
+              <h3 className="overflow-hidden sm:text-xl px-0.5 lg:px-1.5">
+                layanan
+              </h3>
+            </TextBoxReveal>
+            <TextBoxReveal>
+              <h1 className="text-4xl sm:text-5xl lg:text-6xl ">
+                Administrasi
+              </h1>
+            </TextBoxReveal>
+            <motion.div
+              variants={{
+                hidden: { opacity: 0, y: 125 },
+                visible: { opacity: 1, y: 0 },
+              }}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true }}
+              transition={{ duration: 1 }}
+              className="relative w-full h-fit rounded-md px-5 py-7 flex my-5 justify-start items-start gap-5 border-purple-600 hover:bg-purple-50 border hover:shadow-md transition-colors duration-300 ease-in-out"
+            >
+              <div>
+                <h1 className="text-2xl sm:text-3xl lg:text-4xl">
+                  Paket Administrasi
+                </h1>
+                <p className="p-0.5">
+                  Layanan pembuatan website administrasi untuk berbagai jenis
+                  usaha yang akan disesuaikan dengan kebutuhan Anda.layanan ini
+                  dirancang untuk mencapai kebutuhan Anda.
+                </p>
+                <ul className="my-2 grid grid-cols-1 sm:grid-cols-2 ">
+                  <li className="flex justify-start items-center gap-2">
+                    <FaCheck className="text-purple-600" /> Gratis Hosting
+                  </li>
+                  <li className="flex justify-start items-center gap-2">
+                    <FaCheck className="text-purple-600" /> Gratis SSL
+                  </li>
+                  <li className="flex justify-start items-center gap-2">
+                    <FaCheck className="text-purple-600" /> Gratis Maintenance 1
+                    Bulan
+                  </li>
+                  <li className="flex justify-start items-center gap-2">
+                    <FaCheck className="text-purple-600" /> Custom Domain
+                  </li>
+                  <li className="flex justify-start items-center gap-2">
+                    <FaCheck className="text-purple-600" /> Custom Bahasa
+                    Pemrograman
+                  </li>
+                  <li className="flex justify-start items-center gap-2">
+                    <FaCheck className="text-purple-600" /> Responsif
+                  </li>
+                  <li className="flex justify-start items-center gap-2">
+                    <FaCheck className="text-purple-600" /> SEO Friendly
+                  </li>
+                  <li className="flex justify-start items-center gap-2">
+                    <FaCheck className="text-purple-600" /> Design Unik
+                  </li>
+                  <li className="flex justify-start items-center gap-2">
+                    <FaCheck className="text-purple-600" /> Custom Fitur
+                  </li>
+                </ul>
+                <div className="p-0.5 w-full pt-5 flex flex-col sm:flex-row xl:flex-col justify-between items-baseline">
+                  <div>
+                    <h3>Harga Mulai Dari</h3>
+                    <h1 className="text-3xl sm:text-4xl my-2">
+                      <sup className="text-xl">Rp</sup> 5.000.000
+                      <sub className="text-sm"> / Order</sub>
+                    </h1>
+                  </div>
+                  <Link
+                    href="https://wa.me/6285173135780?text=Halo%20saya%20tertarik%20dengan%20layanan%20jasa%20pembuatan%20website%20untuk%20Paket%20Administrasi."
                     className="self-end flex justify-start items-center gap-1 text-base sm:text-lg bg-purple-600 text-white px-3 py-1 rounded-md"
                   >
                     Pesan Sekarang
