@@ -21,10 +21,16 @@ const page = () => {
 
   const portofolios = [
     {
-      image: "/porto/porto1.webp",
-      title: "Bitlearn",
-      description: "Website Akademik Kustom",
-      link: "https://www.bitlearn.site/",
+      image: "/porto/porto0.png",
+      title: "Donebox",
+      description: "Website Daily Do All in One",
+      link: "https://donebox.vercel.app/",
+    },
+    {
+      image: "/porto/porto1.png",
+      title: "Eurosilver",
+      description: "Website Landing Page Toko Silver",
+      link: "https://eurosilver.co.id/",
     },
     {
       image: "/porto/porto2.webp",
