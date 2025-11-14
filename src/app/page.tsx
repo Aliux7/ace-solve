@@ -696,7 +696,7 @@ export default function Home() {
               </div>
               <iframe
                 className="w-full lg:w-[450px] xl:w-[550px]"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3957.8022904495733!2d112.69108109999999!3d-7.2633279!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7ffa92de8b515%3A0x255e339c291d8e36!2sJASA%20WEBSITE%20%26%20APLIKASI%20SURABAYA%20-%20ACESOLVE!5e0!3m2!1sen!2sid!4v1755517206391!5m2!1sen!2sid"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.4175249023806!2d106.82808399999999!3d-6.208531300000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f578613bb2cb%3A0x6e79e2887a98722b!2sJASA%20WEBSITE%20%26%20APLIKASI%20JAKARTA%20-%20ACESOLVE!5e0!3m2!1sen!2sid!4v1755516125601!5m2!1sen!2sid"
                 height="300"
                 loading="lazy"
               ></iframe>
@@ -730,7 +730,7 @@ export default function Home() {
               </div>
               <iframe
                 className="w-full lg:w-[450px] xl:w-[550px]"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.4175249023806!2d106.82808399999999!3d-6.208531300000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f578613bb2cb%3A0x6e79e2887a98722b!2sJASA%20WEBSITE%20%26%20APLIKASI%20JAKARTA%20-%20ACESOLVE!5e0!3m2!1sen!2sid!4v1755516125601!5m2!1sen!2sid"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3957.8022904495733!2d112.69108109999999!3d-7.2633279!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7ffa92de8b515%3A0x255e339c291d8e36!2sJASA%20WEBSITE%20%26%20APLIKASI%20SURABAYA%20-%20ACESOLVE!5e0!3m2!1sen!2sid!4v1755517206391!5m2!1sen!2sid"
                 height="300"
                 loading="lazy"
               ></iframe>
