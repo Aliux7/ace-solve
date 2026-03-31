@@ -15,7 +15,7 @@ export default function Home() {
   const firstLineHeading = splitStringUsingRegex("We Solve Your");
   const secondLineHeading = splitStringUsingRegex("Digital Challenges");
   const subHeading = splitStringUsingRegex(
-    "Dari Ide ke Layar: Ciptakan Website Impian Anda"
+    "Dari Ide ke Layar: Ciptakan Website Impian Anda",
   );
 
   useEffect(() => {
@@ -148,7 +148,8 @@ export default function Home() {
               transition={{ duration: 1, delay: 1 }}
               className="text-sm sm:text-base flex justify-center items-center gap-2 border-b font-semibold relative py-1 px-3 before:content-[''] before:w-full before:h-[1.5px] before:absolute before:left-0 before:bottom-0 before:bg-purple-500 before:transition-transform before:ease-in-out before:duration-[500ms] before:scale-x-0 before:scale-y-100 before:origin-right hover:before:scale-x-100 hover:before:origin-left"
             >
-              <FaWhatsapp className="fill-gray-600 stroke-1" /> Konsultasi
+              <FaWhatsapp className="fill-gray-600 stroke-1" /> Gratis
+              Konsultasi
             </motion.a>
             <motion.a
               href="/layanan"
@@ -163,6 +164,7 @@ export default function Home() {
               className="text-sm sm:text-base flex justify-center items-center gap-2 border-b font-semibold relative py-1 px-5 before:content-[''] before:w-full before:h-[1.5px] before:absolute before:left-0 before:bottom-0 before:bg-purple-500 before:transition-transform before:ease-in-out before:duration-[500ms] before:scale-x-0 before:scale-y-100 before:origin-right hover:before:scale-x-100 hover:before:origin-left"
             >
               <GoProjectTemplate className="fill-gray-600 stroke-1" /> Pesan
+              Layanan
             </motion.a>
           </div>
         </div>
@@ -244,6 +246,94 @@ export default function Home() {
           </motion.div>
         </div>
       </section>
+      <section className="w-full py-16 bg-white relative">
+        <motion.img
+          variants={{
+            hidden: { opacity: 0 },
+            visible: { opacity: 0.07 },
+          }}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          transition={{ duration: 1, delay: 2 }}
+          src="/logo/LogoWhite.png"
+          alt="Brand Logo"
+          className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 h-40 sm:h-60 w-auto opacity-[7%]"
+        />
+        <div className="max-w-6xl mx-auto px-6 text-center">
+          <motion.h1
+            variants={{
+              hidden: { opacity: 0, y: 25 },
+              visible: { opacity: 1, y: 0 },
+            }}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            transition={{ duration: 1 }}
+            className="font-helveticaLight text-3xl mb-10 text-center font-semibold"
+          >
+            Dipercaya Oleh
+          </motion.h1>
+
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 items-center">
+            <motion.img
+              variants={{
+                hidden: { opacity: 0, x: 25 },
+                visible: { opacity: 1, x: 0 },
+              }}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true }}
+              transition={{ duration: 1 }}
+              src="/companies/binus.png"
+              alt="Company 1"
+              className="mx-auto h-16 object-contain grayscale hover:grayscale-0 transition-color"
+            />
+
+            <motion.img
+              variants={{
+                hidden: { opacity: 0, x: 25 },
+                visible: { opacity: 1, x: 0 },
+              }}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true }}
+              transition={{ duration: 1, delay: 0.5 }}
+              src="/companies/pakuwon.png"
+              alt="Company 3"
+              className="mx-auto h-10 object-contain grayscale hover:grayscale-0 transition-color"
+            />
+
+            <motion.img
+              variants={{
+                hidden: { opacity: 0, x: 25 },
+                visible: { opacity: 1, x: 0 },
+              }}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true }}
+              transition={{ duration: 1, delay: 1 }}
+              src="/companies/modelano.png"
+              alt="Company 2"
+              className="mx-auto h-10 object-contain grayscale hover:grayscale-0 transition-color"
+            />
+
+            <motion.img
+              variants={{
+                hidden: { opacity: 0, x: 25 },
+                visible: { opacity: 1, x: 0 },
+              }}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true }}
+              transition={{ duration: 1, delay: 1.5 }}
+              src="/companies/eurogold.png"
+              alt="Company 5"
+              className="mx-auto h-14 object-contain grayscale hover:grayscale-0 transition-color"
+            />
+          </div>
+        </div>
+      </section>
       <section className="relative w-full h-full flex flex-col justify-center items-start">
         <TextBoxReveal>
           <h1 className="font-helveticaLight text-4xl sm:text-[2.75rem] md:text-5xl lg:text-6xl xl:text-7xl pb-1 text-center sm:text-start">
@@ -252,9 +342,13 @@ export default function Home() {
         </TextBoxReveal>
         <TextBoxReveal>
           <p className="text-sm lg:text-base xl:text-lg text-gray-500 md:px-1 md:py-2 lg:py-4 sm:w-full md:w-11/12 lg:w-4/5 xl:w-3/5 text-center sm:text-start">
-            AceSolve berspesialisasi dalam pembuatan website yang disesuaikan
-            dengan kebutuhan Anda. Kami menjamin setiap website tampil optimal,
-            fungsional, dan sesuai dengan visi bisnis Anda.
+            AceSolve berspesialisasi dalam{" "}
+            <span className="font-bold">
+              jasa pembuatan website, aplikasi, dan optimasi SEO
+            </span>{" "}
+            yang disesuaikan dengan kebutuhan Anda. Kami memastikan setiap
+            solusi digital tampil optimal, fungsional, dan selaras dengan visi
+            bisnis Anda.
           </p>
         </TextBoxReveal>
         <ul className="w-full my-5">
