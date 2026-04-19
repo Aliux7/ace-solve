@@ -16,51 +16,93 @@ const page = () => {
   const firstHeading = splitStringUsingRegex("Portofolio Kami");
   const secondHeading = splitStringUsingRegex("Berikut");
   const thirdHeading = splitStringUsingRegex(
-    "Karya terbaik dalam setiap project"
+    "Karya terbaik dalam setiap project",
   );
 
   const portofolios = [
     {
-      image: "/porto/porto0.png",
+      image: "/porto/porto12.webp",
       title: "Donebox",
       description: "Website Daily Do All in One",
-      link: "https://donebox.vercel.app/",
+      link: "https://www.donebox.site/",
     },
     {
-      image: "/porto/porto1.png",
+      image: "/porto/porto13.webp",
       title: "Eurosilver",
       description: "Website Landing Page Toko Silver",
       link: "https://eurosilver.co.id/",
+    }, 
+    {
+      image: "/porto/porto7.webp",
+      title: "Modelano",
+      description: "Website Voting untuk gambar anak-anak",
+      link: "https://www.modelanokidsvote.com/",
+    },
+    {
+      image: "/porto/porto9.webp",
+      title: "Dapugifts",
+      description: "Website Profile dan Catalog Giftset",
+      link: "https://dapugiftstudio.com/",
+    },
+    {
+      image: "/porto/porto0.webp",
+      title: "AceSolve",
+      description: "Profil Perusahaan Jasa Pembuatan Website dan Aplikasi",
+      link: "https://www.acesolve.com/",
+    },
+    {
+      image: "/porto/porto6.webp",
+      title: "Backup Lcas",
+      description: "Website Internal Universitas",
+      link: "Unpublish",
+    },
+    {
+      image: "/porto/porto3.webp",
+      title: "Gitbee",
+      description: "Website Showcase Project Universitas",
+      link: "https://gitbee.apps.binus.ac.id/",
+    },
+    {
+      image: "/porto/porto1.webp",
+      title: "BitLearn",
+      description: "Website Academy dan Bootcamp",
+      link: "https://bitlearn-academy.vercel.app/",
+    },
+    {
+      image: "/porto/porto4.webp",
+      title: "Absenku",
+      description: "Website Absensi Perusahaan",
+      link: "https://dailylog-id.vercel.app/login",
+    },
+    {
+      image: "/porto/porto11.webp",
+      title: "Fome",
+      description: "Website Toko Tas",
+      link: "https://www.diyfome.com/",
+    },
+    {
+      image: "/porto/porto5.webp",
+      title: "Taskalendar",
+      description: "Aplikasi Catat Kebutuhan Sehari - hari",
+      link: "https://play.google.com/store/apps/details?id=edu.bluejack23_1.taskalender",
+    },
+    {
+      image: "/porto/porto8.webp",
+      title: "Cashwise",
+      description: "Aplikasi Android Mengatur Keuangan dan Investasi",
+      link: "https://expo.dev/accounts/aliux7/projects/cashwise/builds/276b79c5-9b33-4739-85ea-346358eddd6f",
     },
     {
       image: "/porto/porto2.webp",
       title: "Wash 24",
-      description: "Website Profil Perusahaan Laundry",
-      link: "https://wash24laundry.com/",
+      description: "Website Landing Page Laundry",
+      link: "https://www.wash24laundry.com/",
     },
     {
-      image: "/porto/porto3.webp",
-      title: "ShowBest",
-      description: "Website Showcase Project Kustom",
-      link: "Unpublish",
-    },
-    {
-      image: "/porto/porto4.webp",
-      title: "AbsenKu",
-      description: "Website Kustom Absensi Perusahaan",
-      link: "https://www.absenku.site/",
-    },
-    {
-      image: "/porto/porto5.webp",
-      title: "Modelano",
-      description: "Website Voting Untuk Anak-Anak",
-      link: "https://www.modelanokidsvote.com/",
-    },
-    {
-      image: "/porto/porto6.webp",
-      title: "Cashwise",
-      description: "Aplikasi Android Mengatur Keuangan dan Investasi",
-      link: "https://expo.dev/accounts/aliux7/projects/cashwise/builds/276b79c5-9b33-4739-85ea-346358eddd6f",
+      image: "/porto/porto10.webp",
+      title: "Admin Laundry",
+      description: "Website Internal Laundry",
+      link: "https://www.adminlaundry.com/",
     },
   ];
 
@@ -220,13 +262,13 @@ const page = () => {
               </div>
               <div className="relative flex flex-col p-5 justify-center items-start pb-16 sm:pb-5 md:pb-16 lg:pb-5">
                 <h1 className="text-3xl font-semibold">{portofolio.title}</h1>
-                <h3 className="text-sm">{portofolio.description}</h3>
+                <h3 className="text-sm w-2/3 pr-5">{portofolio.description}</h3>
                 {portofolio.link !== "Unpublish" ? (
                   <a
                     href={portofolio.link}
                     className="absolute bottom-3.5 right-5 md:right-3 lg:right-5 group flex justify-center items-center gap-1 text-gray-800 text-base sm:text-lg md:text-base lg:text-lg xl:text-xl w-fit whitespace-nowrap py-1 pl-3 px-1 before:content-[''] before:w-full before:h-[1.5px] before:absolute before:left-0 before:bottom-0 before:bg-purple-500 before:transition-transform before:ease-in-out before:duration-[500ms] before:scale-x-0 before:scale-y-100 before:origin-right hover:before:scale-x-100 hover:before:origin-left"
                   >
-                    Lihat Website{" "}
+                    Lihat Project{" "}
                     <div className="h-3 sm:h-5 overflow-hidden">
                       <div className="flex flex-col rotate-45 -translate-x-2 sm:-translate-x-3 -translate-y-1 gap-3 group-hover:translate-x-2 sm:group-hover:translate-x-3 group-hover:-translate-y-5 sm:group-hover:-translate-y-7 transition-all duration-500 ease-in">
                         <GoArrowUp className="w-3 h-3 sm:w-5 sm:h-5 text-purple-600 stroke-1" />
