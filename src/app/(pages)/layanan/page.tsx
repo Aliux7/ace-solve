@@ -213,6 +213,7 @@ const page = () => {
         </div>
       </section>
       <section className="relative w-full min-h-screen h-full flex flex-col justify-start items-start">
+        {/* Landing Page & Company Profile*/}
         <div className="flex flex-col xl:flex-row gap-10">
           <div className="w-full xl:w-1/2" id="landing-page">
             <TextBoxReveal>
@@ -257,9 +258,6 @@ const page = () => {
                     (my.id)
                   </li>
                   <li className="flex justify-start items-center gap-2">
-                    <FaCheck className="text-purple-600" /> Gratis SSL
-                  </li>
-                  <li className="flex justify-start items-center gap-2">
                     <FaCheck className="text-purple-600" /> Gratis Logo
                   </li>
                   <li className="flex justify-start items-center gap-2">
@@ -292,6 +290,10 @@ const page = () => {
                   </li>
                   <li className="flex justify-start items-center gap-2">
                     <FaCheck className="text-purple-600" /> Design Premium
+                  </li>
+                  <li className="flex justify-start items-center gap-2">
+                    <FaCheck className="text-purple-600" /> Struktur Halaman
+                    Siap Jual
                   </li>
                 </ul>
                 <div className="p-0.5 w-full pt-5 flex flex-col sm:flex-row xl:flex-col justify-between items-baseline">
@@ -354,17 +356,13 @@ const page = () => {
                     (my.id)
                   </li>
                   <li className="flex justify-start items-center gap-2">
-                    <FaCheck className="text-purple-600" /> Gratis SSL
-                  </li>
-                  <li className="flex justify-start items-center gap-2">
                     <FaCheck className="text-purple-600" /> Gratis Logo
                   </li>
                   <li className="flex justify-start items-center gap-2">
                     <FaCheck className="text-purple-600" /> Gratis Maintenance
                   </li>
                   <li className="flex justify-start items-center gap-2">
-                    <FaCheck className="text-purple-600" /> Wordpress / Non
-                    Wordpress
+                    <FaCheck className="text-purple-600" /> Non Wordpress
                   </li>
                   <li className="flex justify-start items-center gap-2">
                     <FaCheck className="text-purple-600" /> Integrasi Media
@@ -392,6 +390,10 @@ const page = () => {
                     <FaCheck className="text-purple-600" /> Mulai Dari 1 Akun
                     Email
                   </li>
+                  <li className="flex justify-start items-center gap-2">
+                    <FaCheck className="text-purple-600" /> Struktur halaman
+                    profesional untuk perusahaan
+                  </li>
                 </ul>
                 <div className="p-0.5 w-full pt-5 flex flex-col sm:flex-row xl:flex-col justify-between items-baseline">
                   <div>
@@ -413,6 +415,7 @@ const page = () => {
             </motion.div>
           </div>
         </div>
+        {/* Portofolio & Custom */}
         <div className="flex flex-col xl:flex-row gap-10 mt-10 xl:mt-0 mb-10">
           <div className="w-full xl:w-1/2" id="protofilo-page">
             <TextBoxReveal>
@@ -452,9 +455,6 @@ const page = () => {
                     (my.id)
                   </li>
                   <li className="flex justify-start items-center gap-2">
-                    <FaCheck className="text-purple-600" /> Gratis SSL
-                  </li>
-                  <li className="flex justify-start items-center gap-2">
                     <FaCheck className="text-purple-600" /> Gratis Logo
                   </li>
                   <li className="flex justify-start items-center gap-2">
@@ -481,6 +481,10 @@ const page = () => {
                   </li>
                   <li className="flex justify-start items-center gap-2">
                     <FaCheck className="text-purple-600" /> Design Premium
+                  </li>
+                  <li className="flex justify-start items-center gap-2">
+                    <FaCheck className="text-purple-600" /> Tampilan Pencapaian,
+                    Project, Headline Pribadi
                   </li>
                 </ul>
                 <div className="p-0.5 w-full pt-5 flex flex-col sm:flex-row xl:flex-col justify-between items-baseline">
@@ -579,6 +583,7 @@ const page = () => {
             </motion.div>
           </div>
         </div>
+        {/* Toko Online & Administrasi*/}
         <div className="flex flex-col xl:flex-row gap-10 mt-10 xl:mt-0 mb-10">
           <div className="w-full xl:w-1/2" id="e-commerce-page">
             <TextBoxReveal>
@@ -618,9 +623,6 @@ const page = () => {
                     (my.id)
                   </li>
                   <li className="flex justify-start items-center gap-2">
-                    <FaCheck className="text-purple-600" /> Gratis SSL
-                  </li>
-                  <li className="flex justify-start items-center gap-2">
                     <FaCheck className="text-purple-600" /> Gratis Logo
                   </li>
                   <li className="flex justify-start items-center gap-2">
@@ -648,12 +650,20 @@ const page = () => {
                   <li className="flex justify-start items-center gap-2">
                     <FaCheck className="text-purple-600" /> Design Premium
                   </li>
+                  <li className="flex justify-start items-center gap-2">
+                    <FaCheck className="text-purple-600" /> Fitur Keranjang &
+                    Checkout
+                  </li>
+                  <li className="flex justify-start items-center gap-2">
+                    <FaCheck className="text-purple-600" /> Fitur Payment
+                    (Optional)
+                  </li>
                 </ul>
                 <div className="p-0.5 w-full pt-5 flex flex-col sm:flex-row xl:flex-col justify-between items-baseline">
                   <div>
                     <h3>Harga Mulai Dari</h3>
                     <h1 className="text-3xl sm:text-4xl my-2">
-                      <sup className="text-xl">Rp</sup> 2.500.000
+                      <sup className="text-xl">Rp</sup> 3.500.000
                       <sub className="text-sm"> / Order</sub>
                     </h1>
                   </div>
@@ -704,9 +714,6 @@ const page = () => {
                     <FaCheck className="text-purple-600" /> Gratis Hosting
                   </li>
                   <li className="flex justify-start items-center gap-2">
-                    <FaCheck className="text-purple-600" /> Gratis SSL
-                  </li>
-                  <li className="flex justify-start items-center gap-2">
                     <FaCheck className="text-purple-600" /> Gratis Maintenance 1
                     Bulan
                   </li>
@@ -727,7 +734,16 @@ const page = () => {
                     <FaCheck className="text-purple-600" /> Design Unik
                   </li>
                   <li className="flex justify-start items-center gap-2">
-                    <FaCheck className="text-purple-600" /> Custom Fitur
+                    <FaCheck className="text-purple-600" /> Login Untuk Multiple
+                    Role
+                  </li>
+                  <li className="flex justify-start items-center gap-2">
+                    <FaCheck className="text-purple-600" /> Dashboard untuk
+                    berbagai cabang
+                  </li>
+                  <li className="flex justify-start items-center gap-2">
+                    <FaCheck className="text-purple-600" /> Fitur Custom
+                    menyesuaikan bisnis (Absensi, Laporan Kas, Tracking Order)
                   </li>
                 </ul>
                 <div className="p-0.5 w-full pt-5 flex flex-col sm:flex-row xl:flex-col justify-between items-baseline">
@@ -744,6 +760,201 @@ const page = () => {
                   >
                     Pesan Sekarang
                     <GoArrowUpRight className="w-5 h-5 text-white stroke-1" />
+                  </Link>
+                </div>
+              </div>
+            </motion.div>
+          </div>
+        </div>
+        {/* Toko Online APK & Custom APK */}
+        <div className="flex flex-col xl:flex-row gap-10 mt-10 xl:mt-0 mb-10">
+          {/* TOKO ONLINE APK */}
+          <div className="w-full xl:w-1/2" id="e-commerce-page">
+            <TextBoxReveal>
+              <h3 className="overflow-hidden sm:text-xl px-0.5 lg:px-1.5">
+                layanan
+              </h3>
+            </TextBoxReveal>
+
+            <TextBoxReveal>
+              <h1 className="text-4xl sm:text-5xl lg:text-6xl">
+                Toko Online APK
+              </h1>
+            </TextBoxReveal>
+
+            <motion.div
+              variants={{
+                hidden: { opacity: 0, y: 125 },
+                visible: { opacity: 1, y: 0 },
+              }}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true }}
+              transition={{ duration: 1 }}
+              className="relative w-full h-fit rounded-md px-5 py-7 flex my-5 justify-start items-start gap-5 border-purple-600 hover:bg-purple-50 border hover:shadow-md transition-colors duration-300 ease-in-out"
+            >
+              <div>
+                <h1 className="text-2xl sm:text-3xl lg:text-4xl">
+                  Paket Toko Online Aplikasi
+                </h1>
+
+                <p className="p-0.5">
+                  Layanan pembuatan aplikasi toko online Android yang modern dan
+                  profesional, dirancang untuk menampilkan katalog produk,
+                  checkout otomatis, pembayaran online, dan meningkatkan
+                  penjualan bisnis Anda.
+                </p>
+
+                <ul className="my-2 grid grid-cols-1 sm:grid-cols-2">
+                  <li className="flex items-center gap-2">
+                    <FaCheck className="text-purple-600" /> Android APK
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <FaCheck className="text-purple-600" /> UI Premium Design
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <FaCheck className="text-purple-600" /> Login / Register
+                    User
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <FaCheck className="text-purple-600" /> Katalog Produk
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <FaCheck className="text-purple-600" /> Detail Produk
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <FaCheck className="text-purple-600" /> Keranjang Belanja
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <FaCheck className="text-purple-600" /> Checkout Otomatis
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <FaCheck className="text-purple-600" /> Payment Gateway
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <FaCheck className="text-purple-600" /> Tracking Order
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <FaCheck className="text-purple-600" /> Notifikasi Pesanan
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <FaCheck className="text-purple-600" /> Website Admin
+                    Dashboard
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <FaCheck className="text-purple-600" /> Upload Playstore
+                    Ready
+                  </li>
+                </ul>
+
+                <div className="p-0.5 w-full pt-5 flex flex-col sm:flex-row xl:flex-col justify-between items-baseline">
+                  <div>
+                    <h3>Harga Mulai Dari</h3>
+                    <h1 className="text-3xl sm:text-4xl my-2">
+                      <sup className="text-xl">Rp</sup> 25.000.000
+                      <sub className="text-sm"> / Order</sub>
+                    </h1>
+                  </div>
+
+                  <Link
+                    href="https://wa.me/6285173135780?text=Halo%20saya%20tertarik%20dengan%20layanan%20pembuatan%20Aplikasi%20Toko%20Online."
+                    className="self-end flex items-center gap-1 text-base sm:text-lg bg-purple-600 text-white px-3 py-1 rounded-md"
+                  >
+                    Pesan Sekarang
+                    <GoArrowUpRight className="w-5 h-5 text-white" />
+                  </Link>
+                </div>
+              </div>
+            </motion.div>
+          </div>
+          {/* CUSTOM APK */}
+          <div className="w-full xl:w-1/2 xl:mt-[25%]" id="custom-page">
+            <TextBoxReveal>
+              <h3 className="overflow-hidden sm:text-xl px-0.5 lg:px-1.5">
+                layanan
+              </h3>
+            </TextBoxReveal>
+
+            <TextBoxReveal>
+              <h1 className="text-4xl sm:text-5xl lg:text-6xl">Custom APK</h1>
+            </TextBoxReveal>
+
+            <motion.div
+              variants={{
+                hidden: { opacity: 0, y: 125 },
+                visible: { opacity: 1, y: 0 },
+              }}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true }}
+              transition={{ duration: 1 }}
+              className="relative w-full h-fit rounded-md px-5 py-7 flex my-5 justify-start items-start gap-5 border-purple-600 hover:bg-purple-50 border hover:shadow-md transition-colors duration-300 ease-in-out"
+            >
+              <div>
+                <h1 className="text-2xl sm:text-3xl lg:text-4xl">
+                  Paket Custom Aplikasi
+                </h1>
+
+                <p className="p-0.5">
+                  Layanan pembuatan aplikasi custom Android sesuai kebutuhan
+                  bisnis Anda. Cocok untuk booking system, administrasi,
+                  membership, ERP, marketplace, POS, hingga sistem operasional
+                  perusahaan.
+                </p>
+
+                <ul className="my-2 grid grid-cols-1 sm:grid-cols-2">
+                  <li className="flex items-center gap-2">
+                    <FaCheck className="text-purple-600" /> Android App
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <FaCheck className="text-purple-600" /> UI / UX Premium
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <FaCheck className="text-purple-600" /> Login Multi User
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <FaCheck className="text-purple-600" /> Website Admin
+                    Dashboard
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <FaCheck className="text-purple-600" /> Custom Fitur Sesuai
+                    Request
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <FaCheck className="text-purple-600" /> API Integration
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <FaCheck className="text-purple-600" /> Payment Gateway
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <FaCheck className="text-purple-600" /> Push Notification
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <FaCheck className="text-purple-600" /> Database Management
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <FaCheck className="text-purple-600" /> Maintenance 1 Bulan
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <FaCheck className="text-purple-600" /> Source Code Included
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <FaCheck className="text-purple-600" /> Upload Store Ready
+                  </li>
+                </ul>
+
+                <div className="p-0.5 w-full pt-5 flex flex-col sm:flex-row xl:flex-col justify-between items-baseline">
+                  <div>
+                    <h3>Harga Mulai Dari</h3>
+                    <h1 className="text-3xl sm:text-4xl my-2">Harga Khusus</h1>
+                  </div>
+
+                  <Link
+                    href="https://wa.me/6285173135780?text=Halo%20saya%20tertarik%20dengan%20layanan%20pembuatan%20Custom%20Aplikasi."
+                    className="self-end flex items-center gap-1 text-base sm:text-lg bg-purple-600 text-white px-3 py-1 rounded-md"
+                  >
+                    Pesan Sekarang
+                    <GoArrowUpRight className="w-5 h-5 text-white" />
                   </Link>
                 </div>
               </div>
@@ -776,6 +987,7 @@ const page = () => {
             data-inactive-classes="text-gray-500"
             className="text-sm sm:text-base"
           >
+            {/* Q1 */}
             <h2
               id="accordion-flush-heading-1"
               onClick={() => (openFaq == 1 ? setOpenFaq(0) : setOpenFaq(1))}
@@ -858,6 +1070,7 @@ const page = () => {
                 </ul>
               </div>
             </div>
+            {/* Q2 */}
             <h2
               id="accordion-flush-heading-1"
               onClick={() => (openFaq == 2 ? setOpenFaq(0) : setOpenFaq(2))}
@@ -869,7 +1082,7 @@ const page = () => {
                 aria-expanded="true"
                 aria-controls="accordion-flush-body-1"
               >
-                <span>Apa Perbedaan Wordpress Dengan Non-Wordpress?</span>
+                <span>Apakah Website Bisa Dibuka Di HP</span>
                 <svg
                   data-accordion-icon
                   className={`w-3 h-3 transition-all duration-300 ease-in-out ${
@@ -893,69 +1106,21 @@ const page = () => {
             <div
               id="accordion-flush-body-1"
               className={`${
-                openFaq == 2
-                  ? "h-full lg:h-[16rem] opacity-100"
-                  : "h-0 opacity-0"
+                openFaq == 2 ? "h-full lg:h-fit opacity-100" : "h-0 opacity-0"
               } overflow-hidden transition-all duration-300 ease-in-out`}
               aria-labelledby="accordion-flush-heading-1"
             >
               <div className="px-3 border-b border-gray-400 flex flex-col lg:flex-row gap-5 lg:gap-10 h-full py-3">
-                <div className="w-full lg:w-1/2 h-full border border-purple-600 rounded-md p-5">
-                  <h1 className="text-2xl ">Wordpress</h1>
-                  <ul className="my-1 grid grid-cols-1 md:grid-cols-2 lg:flex lg:flex-col">
-                    <li className="flex justify-start items-center gap-2">
-                      <FaCheck className="text-purple-600" /> Durasi Pengerjaan
-                      Lebih Cepat
-                    </li>
-                    <li className="flex justify-start items-center gap-2">
-                      <FaCheck className="text-purple-600" /> Keamanan Standar
-                    </li>
-                    <li className="flex justify-start items-center gap-2">
-                      <FaCheck className="text-purple-600" /> Memiliki Berbagai
-                      Tema Design
-                    </li>
-                    <li className="flex justify-start items-center gap-2">
-                      <FaCheck className="text-purple-600" /> Sudah memiliki
-                      dukungan Yoast SEO
-                    </li>
-                    <li className="flex justify-start items-center gap-2">
-                      <FaCheck className="text-purple-600" /> Memiliki Berbagai
-                      Plug-in
-                    </li>
-                    <li className="flex justify-start items-center gap-2">
-                      <FaCheck className="text-purple-600" /> Cocok untuk
-                      website skala kecil hingga menengah
-                    </li>
-                  </ul>
-                </div>
-                <div className="w-full lg:w-1/2 h-full border border-purple-600 rounded-md p-5">
-                  <h1 className="text-2xl ">Non-Wordpress</h1>
-                  <ul className="my-1 grid grid-cols-1 md:grid-cols-2 lg:flex lg:flex-col">
-                    <li className="flex justify-start items-center gap-2">
-                      <FaCheck className="text-purple-600" /> Kebutuhan / Fitur
-                      Spesifik
-                    </li>
-                    <li className="flex justify-start items-center gap-2">
-                      <FaCheck className="text-purple-600" /> Kustomisasi
-                      Keamanan
-                    </li>
-                    <li className="flex justify-start items-center gap-2">
-                      <FaCheck className="text-purple-600" /> Kustomisasi Design
-                      / Animasi Rumit
-                    </li>
-                    <li className="flex justify-start items-center gap-2">
-                      <FaCheck className="text-purple-600" /> Kustomisasi Bahasa
-                      Pemrograman
-                    </li>
-                    <li className="flex justify-start items-center gap-2">
-                      <FaCheck className="text-purple-600 w-6 h-6 sm:w-4.5 sm:h-4.5 md:w-6 md:h-6" />{" "}
-                      Cocok untuk website skala tertutup (Private), skala
-                      menengah hingga skala besar
-                    </li>
-                  </ul>
+                <div className="flex justify-start items-center my-1 gap-2 border-y py-2 hover:bg-purple-100 px-2 w-full capitalize">
+                  <span className="bg-purple-600 rounded-sm p-0.5 px-2 text-white">
+                    #
+                  </span>{" "}
+                  Ya, semua website dibuat responsive dan optimal di mobile,
+                  tablet, maupun desktop
                 </div>
               </div>
             </div>
+            {/* Q3 */}
             <h2
               id="accordion-flush-heading-1"
               onClick={() => (openFaq == 3 ? setOpenFaq(0) : setOpenFaq(3))}
@@ -1025,6 +1190,106 @@ const page = () => {
                     SEO Friendly
                   </li>
                 </ul>
+              </div>
+            </div>
+            {/* Q4 */}
+            <h2
+              id="accordion-flush-heading-1"
+              onClick={() => (openFaq == 4 ? setOpenFaq(0) : setOpenFaq(4))}
+            >
+              <button
+                type="button"
+                className="flex items-center justify-between w-full py-5 font-medium text-start rtl:text-right text-gray-800 border-b border-gray-400 gap-3"
+                data-accordion-target="#accordion-flush-body-1"
+                aria-expanded="true"
+                aria-controls="accordion-flush-body-1"
+              >
+                <span>Apakah bisa dibuat aplikasi Android / iOS?</span>
+                <svg
+                  data-accordion-icon
+                  className={`w-3 h-3 transition-all duration-300 ease-in-out ${
+                    openFaq == 3 ? "" : "rotate-180"
+                  } shrink-0`}
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 10 6"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M9 5 5 1 1 5"
+                  />
+                </svg>
+              </button>
+            </h2>
+            <div
+              id="accordion-flush-body-1"
+              className={`${
+                openFaq == 4 ? "h-full lg:h-fit opacity-100" : "h-0 opacity-0"
+              } overflow-hidden transition-all duration-300 ease-in-out`}
+              aria-labelledby="accordion-flush-heading-1"
+            >
+              <div className="px-3 border-b border-gray-400 flex flex-col lg:flex-row gap-5 lg:gap-10 h-full py-3">
+                <div className="flex justify-start items-center my-1 gap-2 border-y py-2 hover:bg-purple-100 px-2 w-full capitalize">
+                  <span className="bg-purple-600 rounded-sm p-0.5 px-2 text-white">
+                    #
+                  </span>{" "}
+                  Untuk saat ini kami hanya melayani pembuatan aplikasi Android
+                  dan website
+                </div>
+              </div>
+            </div>
+            {/* Q5 */}
+            <h2
+              id="accordion-flush-heading-1"
+              onClick={() => (openFaq == 5 ? setOpenFaq(0) : setOpenFaq(5))}
+            >
+              <button
+                type="button"
+                className="flex items-center justify-between w-full py-5 font-medium text-start rtl:text-right text-gray-800 border-b border-gray-400 gap-3"
+                data-accordion-target="#accordion-flush-body-1"
+                aria-expanded="true"
+                aria-controls="accordion-flush-body-1"
+              >
+                <span>Jika belum punya gambaran, apakah bisa dibantu?</span>
+                <svg
+                  data-accordion-icon
+                  className={`w-3 h-3 transition-all duration-300 ease-in-out ${
+                    openFaq == 3 ? "" : "rotate-180"
+                  } shrink-0`}
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 10 6"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M9 5 5 1 1 5"
+                  />
+                </svg>
+              </button>
+            </h2>
+            <div
+              id="accordion-flush-body-1"
+              className={`${
+                openFaq == 5 ? "h-full lg:h-fit opacity-100" : "h-0 opacity-0"
+              } overflow-hidden transition-all duration-300 ease-in-out`}
+              aria-labelledby="accordion-flush-heading-1"
+            >
+              <div className="px-3 border-b border-gray-400 flex flex-col lg:flex-row gap-5 lg:gap-10 h-full py-3">
+                <div className="flex justify-start items-center my-1 gap-2 border-y py-2 hover:bg-purple-100 px-2 w-full capitalize">
+                  <span className="bg-purple-600 rounded-sm p-0.5 px-2 text-white">
+                    #
+                  </span>{" "}
+                  Tentu. Kami bisa bantu konsultasi gratis untuk menentukan
+                  solusi terbaik sesuai kebutuhan Anda.
+                </div>
               </div>
             </div>
           </div>
