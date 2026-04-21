@@ -741,7 +741,7 @@ const page = () => {
                     <FaCheck className="text-purple-600" /> Dashboard untuk
                     berbagai cabang
                   </li>
-                  <li className="flex justify-start items-center gap-2">
+                  <li className="flex justify-start items-center gap-2 text-balance">
                     <FaCheck className="text-purple-600" /> Fitur Custom
                     menyesuaikan bisnis (Absensi, Laporan Kas, Tracking Order)
                   </li>
