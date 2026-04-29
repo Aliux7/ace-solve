@@ -21,6 +21,12 @@ const page = () => {
 
   const portofolios = [
     {
+      image: "/porto/porto14.webp",
+      title: "EuroGold",
+      description: "Aplikasi Beli Emas dan Perak",
+      link: "https://play.google.com/store/apps/details?id=com.acesolve.eurogold",
+    },
+    {
       image: "/porto/porto12.webp",
       title: "Donebox",
       description: "Website Daily Do All in One",

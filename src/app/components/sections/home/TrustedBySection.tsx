@@ -27,7 +27,7 @@ const TrustedBySection = () => {
           whileInView="visible"
           viewport={{ once: true }}
           transition={{ duration: 1 }}
-          className="font-helveticaLight text-xl sm:text-2xl xl:text-3xl mb-10 text-center font-semibold"
+          className="font-helveticaLight text-xl                                                                 sm:text-2xl xl:text-3xl mb-10 text-center font-semibold"
         >
           Dipercaya Oleh
         </motion.h1>
