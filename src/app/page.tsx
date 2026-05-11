@@ -10,6 +10,7 @@ import HeroSection from "./components/sections/home/HeroSection";
 import TrustedBySection from "./components/sections/home/TrustedBySection";
 import WhyUsSection from "./components/sections/home/WhyUsSection";
 import OurTeam from "./components/sections/home/OurTeam";
+import { TestimonialSection } from "./components/sections/home/TestimonialSection";
 
 export default function Home() {
   useEffect(() => {
@@ -34,7 +35,7 @@ export default function Home() {
       <TrustedBySection />
       <WhyUsSection />
       <OurTeam />
-
+      <TestimonialSection />
       <section className="relative w-full h-full min-h-screen flex flex-col justify-center items-start text-center sm:text-start">
         <TextBoxReveal width="100%">
           <h3 className="font-helveticaLight text-xl w-full px-1">pilihan</h3>
