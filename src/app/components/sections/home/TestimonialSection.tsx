@@ -29,6 +29,24 @@ const testimonials = [
     role: "Dapu Gift Studio",
     avatar: "...",
   },
+  {
+    quote: "Fitur sangat user friendly, gampang dimengerti dan pengerjaan cepat. Semua mantap dari website internal sampai website untuk mahasiswa dan dosen",
+    author: "K*****",
+    role: "Binus University",
+    avatar: "...",
+  },
+  {
+    quote: "Pengerajaan cepat, fleksibel juga. Awalnya ingin buat landing page buat bootcamp terus nambah jadi website courses juga, hasilnya bagus dan cepat.",
+    author: "S*********s Cl****t",
+    role: "BitLearn",
+    avatar: "...",
+  },
+  {
+    quote: "Website internal sangat customable, dapat digunakan karyawan dengan mudah. Fiturnya custom sesuai keperluan usaha saya.",
+    author: "K**** Yu***o",
+    role: "Wash24",
+    avatar: "...",
+  },
 ];
 
 const TestimonialCard = ({ testimonial }: { testimonial: any }) => (
