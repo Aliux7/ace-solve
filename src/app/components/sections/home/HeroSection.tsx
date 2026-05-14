@@ -146,6 +146,7 @@ const HeroSection = () => {
       </div>
       <motion.img
         src="/Mockup3.webp"
+        alt="Hero_Mockup"
         variants={{
           hidden: { opacity: 0, x: -25 },
           visible: { opacity: 1, x: 0 },

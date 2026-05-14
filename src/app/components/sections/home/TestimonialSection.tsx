@@ -1,5 +1,13 @@
 import React from "react";
 import { TextBoxReveal } from "../../ui/TextBoxReveal";
+import BinusLogo from "@/../public/companies/short_icon/Binus.webp"
+import BitLearnLogo from "@/../public/companies/short_icon/BitLearn.webp"
+import DapuLogo from "@/../public/companies/short_icon/Dapu.ico"
+import EuroGoldsLogo from "@/../public/companies/short_icon/EuroGold.webp"
+import FomeLogo from "@/../public/companies/short_icon/Fome.webp"
+import ModelanoLogo from "@/../public/companies/short_icon/Modelano.ico"
+import Wash24Logo from "@/../public/companies/short_icon/Wash24.webp"
+import Image from "next/image";
 
 const testimonials = [
   {
@@ -7,45 +15,45 @@ const testimonials = [
       "Top notch service! Detail-UI. Definitely will use this service again.",
     author: "Eu***** C***sa",
     role: "FOME",
-    avatar: "...",
+    avatar: FomeLogo,
   },
   {
     quote:
       "Aplikasi aman, sudah bisa didownload diplaystore tampilannya juga bagus",
     author: "Ze***s",
     role: "EuroGold",
-    avatar: "...",
+    avatar: EuroGoldsLogo,
   },
   {
     quote: "Pengerjaan cepat, sangat professional. Fleksibel",
     author: "Am**** C****ty",
     role: "Modelano",
-    avatar: "...",
+    avatar: ModelanoLogo,
   },
   {
     quote:
       "Untuk projects aman, ada beberapa fitur yang tadi estimasi pengerjaan 2 minggu selesai dibawah 5 hari. Untuk revisi juga sangat generous karena setiap fitur diijinin all you can revisi",
     author: "An**** G******i",
     role: "Dapu Gift Studio",
-    avatar: "...",
+    avatar: DapuLogo,
   },
   {
     quote: "Fitur sangat user friendly, gampang dimengerti dan pengerjaan cepat. Semua mantap dari website internal sampai website untuk mahasiswa dan dosen",
     author: "K*****",
     role: "Binus University",
-    avatar: "...",
+    avatar: BinusLogo,
   },
   {
     quote: "Pengerajaan cepat, fleksibel juga. Awalnya ingin buat landing page buat bootcamp terus nambah jadi website courses juga, hasilnya bagus dan cepat.",
     author: "S*********s Cl****t",
     role: "BitLearn",
-    avatar: "...",
+    avatar: BitLearnLogo,
   },
   {
     quote: "Website internal sangat customable, dapat digunakan karyawan dengan mudah. Fiturnya custom sesuai keperluan usaha saya.",
     author: "K**** Yu***o",
     role: "Wash24",
-    avatar: "...",
+    avatar: Wash24Logo,
   },
 ];
 
@@ -58,11 +66,15 @@ const TestimonialCard = ({ testimonial }: { testimonial: any }) => (
       {testimonial.quote}
     </p>
     <div className="flex items-center gap-3">
-      <div className="w-10 h-10 rounded-full bg-purple-100 flex-shrink-0 flex justify-center items-center uppercase">
-        {testimonial.role.charAt(0)}
-      </div>
+      <Image
+        src={testimonial.avatar}
+        alt={testimonial.role}
+        width={40}
+        height={40}
+        className="w-10 h-10 rounded-full border border-purple-100 flex-shrink-0 flex justify-center items-center uppercase object-cover"
+      />
       <div className="min-w-0">
-        <h4 className="font-bold text-gray-900 text-sm truncate">
+        <h4 className="font-bold text-gray-900 text-sm truncate"> 
           {testimonial.role}
         </h4>
         <p className="text-xs text-gray-500 truncate">{testimonial.author}</p>
