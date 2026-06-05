@@ -5,15 +5,15 @@ const WhyUsSection = () => {
   return (
     <section className="relative w-full h-full flex flex-col justify-center items-start">
       <TextBoxReveal>
-        <h1 className="font-helveticaLight text-4xl sm:text-[2.75rem] md:text-5xl lg:text-6xl xl:text-7xl pb-1 text-center sm:text-start">
+        <h2 className="font-helveticaLight text-4xl sm:text-[2.75rem] md:text-5xl lg:text-6xl xl:text-7xl pb-1 text-center sm:text-start">
           Mengapa Memilih AceSolve?
-        </h1>
+        </h2>
       </TextBoxReveal>
       <TextBoxReveal>
         <p className="text-sm lg:text-base xl:text-lg text-gray-500 md:px-1 md:py-2 lg:py-4 sm:w-full md:w-11/12 lg:w-4/5 xl:w-3/5 text-center sm:text-start">
           AceSolve berspesialisasi dalam{" "}
           <span className="font-bold">
-            jasa pembuatan website, aplikasi, dan optimasi SEO
+            jasa pembuatan website, aplikasi Android & iOS, dan optimasi SEO
           </span>{" "}
           yang disesuaikan dengan kebutuhan Anda. Kami memastikan setiap solusi
           digital tampil optimal, fungsional, dan selaras dengan visi bisnis
@@ -29,7 +29,7 @@ const WhyUsSection = () => {
                   01/
                 </h1>
                 <div className="flex flex-col gap-2 text-center sm:text-start">
-                  <h1 className="text-3xl lg:text-4xl">Berpengalaman</h1>
+                  <h3 className="text-3xl lg:text-4xl">Berpengalaman</h3>
                   <p className="text-gray-600 xl:w-3/4 text-sm lg:text-base">
                     Dengan pengalaman bertahun-tahun dalam pembuatan website,
                     AceSolve memastikan setiap proyek ditangani dengan baik dan
@@ -39,6 +39,9 @@ const WhyUsSection = () => {
               </div>
               <img
                 src="/icon/experience.png"
+                alt=""
+                width={80}
+                height={80}
                 className="w-14 h-14 md:w-20 md:h-20 "
               />
 
@@ -53,7 +56,7 @@ const WhyUsSection = () => {
                   02/
                 </h1>
                 <div className="flex flex-col gap-2 text-center sm:text-start">
-                  <h1 className="text-3xl lg:text-4xl">Harga Terjangkau</h1>
+                  <h3 className="text-3xl lg:text-4xl">Harga Terjangkau</h3>
                   <p className="text-gray-600 xl:w-3/4 text-sm lg:text-base">
                     AceSolve menawarkan solusi pembuatan website berkualitas
                     dengan harga yang kompetitif, memastikan Anda mendapatkan
@@ -61,7 +64,7 @@ const WhyUsSection = () => {
                   </p>
                 </div>
               </div>
-              <img src="/icon/price.png" className="w-14 h-14 md:w-20 md:h-20 " />
+              <img src="/icon/price.png" alt="" width={80} height={80} className="w-14 h-14 md:w-20 md:h-20 " />
             </div>
           </TextBoxReveal>
         </li>
@@ -73,7 +76,7 @@ const WhyUsSection = () => {
                   03/
                 </h1>
                 <div className="flex flex-col gap-2 text-center sm:text-start">
-                  <h1 className="text-3xl lg:text-4xl">Terpercaya</h1>
+                  <h3 className="text-3xl lg:text-4xl">Terpercaya</h3>
                   <p className="text-gray-600 xl:w-3/4 text-sm lg:text-base">
                     AceSolve dikenal sebagai penyedia layanan yang dapat
                     diandalkan, dengan komitmen penuh terhadap kualitas dan
@@ -81,7 +84,7 @@ const WhyUsSection = () => {
                   </p>
                 </div>
               </div>
-              <img src="/icon/trust.png" className="w-14 h-14 md:w-20 md:h-20 " />
+              <img src="/icon/trust.png" alt="" width={80} height={80} className="w-14 h-14 md:w-20 md:h-20 " />
             </div>
           </TextBoxReveal>
         </li>
@@ -93,7 +96,7 @@ const WhyUsSection = () => {
                   04/
                 </h1>
                 <div className="flex flex-col gap-2 text-center sm:text-start">
-                  <h1 className="text-3xl lg:text-4xl">Garansi</h1>
+                  <h3 className="text-3xl lg:text-4xl">Garansi</h3>
                   <p className="text-gray-600 xl:w-3/4 text-sm lg:text-base">
                     AceSolve memberikan garansi kualitas pada setiap proyek
                     website, memastikan bahwa hasil akhir memenuhi ekspektasi Anda
@@ -103,6 +106,9 @@ const WhyUsSection = () => {
               </div>
               <img
                 src="/icon/warranty.png"
+                alt=""
+                width={80}
+                height={80}
                 className="w-14 h-14 md:w-20 md:h-20 "
               />
             </div>
@@ -116,7 +122,7 @@ const WhyUsSection = () => {
                   05/
                 </h1>
                 <div className="flex flex-col gap-2 text-center sm:text-start">
-                  <h1 className="text-3xl lg:text-4xl">Fleksibel</h1>
+                  <h3 className="text-3xl lg:text-4xl">Fleksibel</h3>
                   <p className="text-gray-600 xl:w-3/4 text-sm lg:text-base">
                     AceSolve menawarkan layanan custom yang dapat menyesuaikan
                     dengan kebutuhan Anda, memungkinkan fleksibilitas dalam setiap
@@ -127,6 +133,9 @@ const WhyUsSection = () => {
               </div>
               <img
                 src="/icon/customize.png"
+                alt=""
+                width={80}
+                height={80}
                 className="w-14 h-14 md:w-20 md:h-20 "
               />
             </div>
@@ -140,7 +149,7 @@ const WhyUsSection = () => {
                   06/
                 </h1>
                 <div className="flex flex-col gap-2 text-center sm:text-start">
-                  <h1 className="text-3xl lg:text-4xl">Support</h1>
+                  <h3 className="text-3xl lg:text-4xl">Support 24/7</h3>
                   <p className="text-gray-600 xl:w-3/4 text-sm lg:text-base">
                     AceSolve menyediakan layanan dukungan 24/7, memastikan Anda
                     selalu mendapatkan bantuan kapan pun diperlukan, sehingga
@@ -150,6 +159,9 @@ const WhyUsSection = () => {
               </div>
               <img
                 src="/icon/support.png"
+                alt=""
+                width={80}
+                height={80}
                 className="w-14 h-14 md:w-20 md:h-20 "
               />
             </div>

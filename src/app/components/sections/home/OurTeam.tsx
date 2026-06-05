@@ -23,14 +23,14 @@ const OurTeam = () => {
       </div>
       <div className="absolute bottom-0 left-0 p-5 sm:relative flex flex-col justify-center items-start sm:-ml-20 z-10">
         <TextBoxReveal>
-          <h1 className="font-helveticaLight text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl pb-1 text-center sm:text-start">
+          <h2 className="font-helveticaLight text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl pb-1 text-center sm:text-start">
             Meet Our Founder
-          </h1>
+          </h2>
         </TextBoxReveal>
         <TextBoxReveal>
-          <h3 className="font-helveticaLight text-sm sm:text-base md:text-lg xl:text-xl pb-1 text-start text-balance">
+          <p className="font-helveticaLight text-sm sm:text-base md:text-lg xl:text-xl pb-1 text-start text-balance">
             Berpengalaman, Solusi Terstruktur, Hasil Berkualitas
-          </h3>
+          </p>
         </TextBoxReveal>
       </div>
     </section>

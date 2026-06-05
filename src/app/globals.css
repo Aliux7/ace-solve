@@ -8,6 +8,7 @@
   src: url("/font/ppneuemontreal/ppneuemontreal-bold.otf") format("opentype");
   font-weight: bold;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -15,6 +16,7 @@
   src: url("/font/ppneuemontreal/ppneuemontreal-book.otf") format("opentype");
   font-weight: 400;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -22,6 +24,7 @@
   src: url("/font/ppneuemontreal/ppneuemontreal-italic.otf") format("opentype");
   font-weight: 400;
   font-style: italic;
+  font-display: swap;
 }
 
 @font-face {
@@ -29,6 +32,7 @@
   src: url("/font/ppneuemontreal/ppneuemontreal-medium.otf") format("opentype");
   font-weight: 500;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -37,6 +41,7 @@
     format("opentype");
   font-weight: 600;
   font-style: italic;
+  font-display: swap;
 }
 
 @font-face {
@@ -44,6 +49,7 @@
   src: url("/font/ppneuemontreal/ppneuemontreal-thin.otf") format("opentype");
   font-weight: 100;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -52,6 +58,7 @@
     format("truetype");
   font-weight: 300;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -60,6 +67,7 @@
     format("truetype");
   font-weight: 400;
   font-style: normal;
+  font-display: swap;
 }
 
 * {

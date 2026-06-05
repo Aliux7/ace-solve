@@ -115,6 +115,8 @@ const HeroSection = () => {
         <div className="flex justify-center lg:justify-start items-center gap-2 sm:gap-5 my-1">
           <motion.a
             href="https://api.whatsapp.com/send?phone=6285173135780"
+            target="_blank"
+            rel="noopener noreferrer"
             variants={{
               hidden: { opacity: 0, y: 25 },
               visible: { opacity: 1, y: 0 },
@@ -146,7 +148,9 @@ const HeroSection = () => {
       </div>
       <motion.img
         src="/Mockup3.webp"
-        alt="Hero_Mockup"
+        alt="Mockup website buatan AceSolve"
+        width={846}
+        height={1032}
         variants={{
           hidden: { opacity: 0, x: -25 },
           visible: { opacity: 1, x: 0 },
@@ -158,6 +162,9 @@ const HeroSection = () => {
       />
       <motion.img
         src="/Mockup1.webp"
+        alt=""
+        width={858}
+        height={1060}
         variants={{
           hidden: { opacity: 0, x: 25 },
           visible: { opacity: 0.1, x: 0 },

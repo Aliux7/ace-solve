@@ -222,9 +222,9 @@ const page = () => {
               </h3>
             </TextBoxReveal>
             <TextBoxReveal>
-              <h1 className="text-4xl sm:text-5xl lg:text-6xl  pb-1">
+              <h2 className="text-4xl sm:text-5xl lg:text-6xl  pb-1">
                 Landing Page
-              </h1>
+              </h2>
             </TextBoxReveal>
             <motion.div
               variants={{
@@ -238,9 +238,9 @@ const page = () => {
               className="relative w-full h-fit rounded-md px-5 py-7 flex my-5 justify-start items-start gap-5 border-purple-600 hover:bg-purple-50 border hover:shadow-md transition-colors duration-300 ease-in-out"
             >
               <div>
-                <h1 className="text-2xl sm:text-3xl lg:text-4xl">
+                <h3 className="text-2xl sm:text-3xl lg:text-4xl">
                   Paket Landing Page
-                </h1>
+                </h3>
                 <p className="p-0.5">
                   Layanan landing page website yang dirancang khusus untuk
                   mempromosikan produk, mengumpulkan data pengguna, atau
@@ -299,13 +299,15 @@ const page = () => {
                 <div className="p-0.5 w-full pt-5 flex flex-col sm:flex-row xl:flex-col justify-between items-baseline">
                   <div>
                     <h3>Harga Mulai Dari</h3>
-                    <h1 className="text-3xl sm:text-4xl my-2">
+                    <p className="text-3xl sm:text-4xl my-2 font-semibold">
                       <sup className="text-xl">Rp</sup> 1.000.000
-                      <sub className="text-sm"> / Order</sub>
-                    </h1>
+                      <sub className="text-sm font-normal"> / Order</sub>
+                    </p>
                   </div>
                   <Link
                     href="https://wa.me/6285173135780?text=Halo%20saya%20tertarik%20dengan%20layanan%20jasa%20pembuatan%20website%20untuk%20Paket%20Landing%20Page."
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="self-end flex justify-start items-center gap-1 text-base sm:text-lg bg-purple-600 text-white px-3 py-1 rounded-md"
                   >
                     Pesan Sekarang
@@ -322,9 +324,9 @@ const page = () => {
               </h3>
             </TextBoxReveal>
             <TextBoxReveal>
-              <h1 className="text-4xl sm:text-5xl lg:text-6xl  pb-1">
+              <h2 className="text-4xl sm:text-5xl lg:text-6xl  pb-1">
                 Company Profile
-              </h1>
+              </h2>
             </TextBoxReveal>
             <motion.div
               variants={{
@@ -338,9 +340,9 @@ const page = () => {
               className="relative w-full h-fit rounded-md px-5 py-7 flex my-5 justify-start items-start gap-5 border-purple-600 hover:bg-purple-50 border hover:shadow-md transition-colors duration-300 ease-in-out"
             >
               <div>
-                <h1 className="text-2xl sm:text-3xl lg:text-4xl">
+                <h3 className="text-2xl sm:text-3xl lg:text-4xl">
                   Paket Company Profile
-                </h1>
+                </h3>
                 <p className="p-0.5">
                   Layanan pembuatan website company profile yang informatif dan
                   dirancang untuk memperkuat citra perusahaan Anda. Cocok untuk
@@ -398,13 +400,15 @@ const page = () => {
                 <div className="p-0.5 w-full pt-5 flex flex-col sm:flex-row xl:flex-col justify-between items-baseline">
                   <div>
                     <h3>Harga Mulai Dari</h3>
-                    <h1 className="text-3xl sm:text-4xl my-2">
+                    <p className="text-3xl sm:text-4xl my-2 font-semibold">
                       <sup className="text-xl">Rp</sup> 1.500.000
-                      <sub className="text-sm"> / Order</sub>
-                    </h1>
+                      <sub className="text-sm font-normal"> / Order</sub>
+                    </p>
                   </div>
                   <Link
                     href="https://wa.me/6285173135780?text=Halo%20saya%20tertarik%20dengan%20layanan%20jasa%20pembuatan%20website%20untuk%20Paket%20Company%20Profile."
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="self-end flex justify-start items-center gap-1 text-base sm:text-lg bg-purple-600 text-white px-3 py-1 rounded-md"
                   >
                     Pesan Sekarang
@@ -424,7 +428,7 @@ const page = () => {
               </h3>
             </TextBoxReveal>
             <TextBoxReveal>
-              <h1 className="text-4xl sm:text-5xl lg:text-6xl ">Portofolio</h1>
+              <h2 className="text-4xl sm:text-5xl lg:text-6xl ">Portofolio</h2>
             </TextBoxReveal>
             <motion.div
               variants={{
@@ -438,9 +442,9 @@ const page = () => {
               className="relative w-full h-fit rounded-md px-5 py-7 flex my-5 justify-start items-start gap-5 border-purple-600 hover:bg-purple-50 border hover:shadow-md transition-colors duration-300 ease-in-out"
             >
               <div>
-                <h1 className="text-2xl sm:text-3xl lg:text-4xl">
+                <h3 className="text-2xl sm:text-3xl lg:text-4xl">
                   Paket Portofolio
-                </h1>
+                </h3>
                 <p className="p-0.5">
                   Layanan Pembuatan website portofolio yang elegan dan
                   profesional, dirancang untuk menampilkan karya dan proyek Anda
@@ -490,13 +494,15 @@ const page = () => {
                 <div className="p-0.5 w-full pt-5 flex flex-col sm:flex-row xl:flex-col justify-between items-baseline">
                   <div>
                     <h3>Harga Mulai Dari</h3>
-                    <h1 className="text-3xl sm:text-4xl my-2">
+                    <p className="text-3xl sm:text-4xl my-2 font-semibold">
                       <sup className="text-xl">Rp</sup> 750.000
-                      <sub className="text-sm"> / Order</sub>
-                    </h1>
+                      <sub className="text-sm font-normal"> / Order</sub>
+                    </p>
                   </div>
                   <Link
                     href="https://wa.me/6285173135780?text=Halo%20saya%20tertarik%20dengan%20layanan%20jasa%20pembuatan%20website%20untuk%20Paket%20Portofolio."
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="self-end flex justify-start items-center gap-1 text-base sm:text-lg bg-purple-600 text-white px-3 py-1 rounded-md"
                   >
                     Pesan Sekarang
@@ -513,7 +519,7 @@ const page = () => {
               </h3>
             </TextBoxReveal>
             <TextBoxReveal>
-              <h1 className="text-4xl sm:text-5xl lg:text-6xl ">Custom</h1>
+              <h2 className="text-4xl sm:text-5xl lg:text-6xl ">Custom</h2>
             </TextBoxReveal>
             <motion.div
               variants={{
@@ -527,9 +533,9 @@ const page = () => {
               className="relative w-full h-fit rounded-md px-5 py-7 flex my-5 justify-start items-start gap-5 border-purple-600 hover:bg-purple-50 border hover:shadow-md transition-colors duration-300 ease-in-out"
             >
               <div>
-                <h1 className="text-2xl sm:text-3xl lg:text-4xl">
+                <h3 className="text-2xl sm:text-3xl lg:text-4xl">
                   Paket Custom
-                </h1>
+                </h3>
                 <p className="p-0.5">
                   Layanan pembuatan website custom yang akan disesuaikan dengan
                   kebutuhan Anda. Mulai dari website e-commerce, website blog /
@@ -569,10 +575,12 @@ const page = () => {
                 <div className="p-0.5 w-full pt-5 flex flex-col sm:flex-row xl:flex-col justify-between items-baseline">
                   <div>
                     <h3>Harga Mulai Dari</h3>
-                    <h1 className="text-3xl sm:text-4xl my-2">Harga Khusus</h1>
+                    <p className="text-3xl sm:text-4xl my-2 font-semibold">Harga Khusus</p>
                   </div>
                   <Link
                     href="https://wa.me/6285173135780?text=Halo%20saya%20tertarik%20dengan%20layanan%20jasa%20pembuatan%20website%20untuk%20Paket%20Custom."
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="self-end flex justify-start items-center gap-1 text-base sm:text-lg bg-purple-600 text-white px-3 py-1 rounded-md"
                   >
                     Pesan Sekarang
@@ -592,7 +600,7 @@ const page = () => {
               </h3>
             </TextBoxReveal>
             <TextBoxReveal>
-              <h1 className="text-4xl sm:text-5xl lg:text-6xl">Toko Online</h1>
+              <h2 className="text-4xl sm:text-5xl lg:text-6xl">Toko Online</h2>
             </TextBoxReveal>
             <motion.div
               variants={{
@@ -606,9 +614,9 @@ const page = () => {
               className="relative w-full h-fit rounded-md px-5 py-7 flex my-5 justify-start items-start gap-5 border-purple-600 hover:bg-purple-50 border hover:shadow-md transition-colors duration-300 ease-in-out"
             >
               <div>
-                <h1 className="text-2xl sm:text-3xl lg:text-4xl">
+                <h3 className="text-2xl sm:text-3xl lg:text-4xl">
                   Paket Toko Online
-                </h1>
+                </h3>
                 <p className="p-0.5">
                   Layanan Pembuatan website toko online yang elegan dan
                   profesional, dirancang untuk menampilkan produk Anda secara
@@ -662,13 +670,15 @@ const page = () => {
                 <div className="p-0.5 w-full pt-5 flex flex-col sm:flex-row xl:flex-col justify-between items-baseline">
                   <div>
                     <h3>Harga Mulai Dari</h3>
-                    <h1 className="text-3xl sm:text-4xl my-2">
+                    <p className="text-3xl sm:text-4xl my-2 font-semibold">
                       <sup className="text-xl">Rp</sup> 3.500.000
-                      <sub className="text-sm"> / Order</sub>
-                    </h1>
+                      <sub className="text-sm font-normal"> / Order</sub>
+                    </p>
                   </div>
                   <Link
                     href="https://wa.me/6285173135780?text=Halo%20saya%20tertarik%20dengan%20layanan%20jasa%20pembuatan%20website%20untuk%20Paket%20Toko%20Online."
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="self-end flex justify-start items-center gap-1 text-base sm:text-lg bg-purple-600 text-white px-3 py-1 rounded-md"
                   >
                     Pesan Sekarang
@@ -685,9 +695,9 @@ const page = () => {
               </h3>
             </TextBoxReveal>
             <TextBoxReveal>
-              <h1 className="text-4xl sm:text-5xl lg:text-6xl ">
+              <h2 className="text-4xl sm:text-5xl lg:text-6xl ">
                 Administrasi
-              </h1>
+              </h2>
             </TextBoxReveal>
             <motion.div
               variants={{
@@ -701,9 +711,9 @@ const page = () => {
               className="relative w-full h-fit rounded-md px-5 py-7 flex my-5 justify-start items-start gap-5 border-purple-600 hover:bg-purple-50 border hover:shadow-md transition-colors duration-300 ease-in-out"
             >
               <div>
-                <h1 className="text-2xl sm:text-3xl lg:text-4xl">
+                <h3 className="text-2xl sm:text-3xl lg:text-4xl">
                   Paket Administrasi
-                </h1>
+                </h3>
                 <p className="p-0.5">
                   Layanan pembuatan website administrasi untuk berbagai jenis
                   usaha yang akan disesuaikan dengan kebutuhan Anda.layanan ini
@@ -749,13 +759,15 @@ const page = () => {
                 <div className="p-0.5 w-full pt-5 flex flex-col sm:flex-row xl:flex-col justify-between items-baseline">
                   <div>
                     <h3>Harga Mulai Dari</h3>
-                    <h1 className="text-3xl sm:text-4xl my-2">
+                    <p className="text-3xl sm:text-4xl my-2 font-semibold">
                       <sup className="text-xl">Rp</sup> 5.000.000
-                      <sub className="text-sm"> / Order</sub>
-                    </h1>
+                      <sub className="text-sm font-normal"> / Order</sub>
+                    </p>
                   </div>
                   <Link
                     href="https://wa.me/6285173135780?text=Halo%20saya%20tertarik%20dengan%20layanan%20jasa%20pembuatan%20website%20untuk%20Paket%20Administrasi."
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="self-end flex justify-start items-center gap-1 text-base sm:text-lg bg-purple-600 text-white px-3 py-1 rounded-md"
                   >
                     Pesan Sekarang
@@ -777,9 +789,9 @@ const page = () => {
             </TextBoxReveal>
 
             <TextBoxReveal>
-              <h1 className="text-4xl sm:text-5xl lg:text-6xl">
+              <h2 className="text-4xl sm:text-5xl lg:text-6xl">
                 Toko Online APK
-              </h1>
+              </h2>
             </TextBoxReveal>
 
             <motion.div
@@ -794,20 +806,20 @@ const page = () => {
               className="relative w-full h-fit rounded-md px-5 py-7 flex my-5 justify-start items-start gap-5 border-purple-600 hover:bg-purple-50 border hover:shadow-md transition-colors duration-300 ease-in-out"
             >
               <div>
-                <h1 className="text-2xl sm:text-3xl lg:text-4xl">
+                <h3 className="text-2xl sm:text-3xl lg:text-4xl">
                   Paket Toko Online Aplikasi
-                </h1>
+                </h3>
 
                 <p className="p-0.5">
-                  Layanan pembuatan aplikasi toko online Android yang modern dan
-                  profesional, dirancang untuk menampilkan katalog produk,
-                  checkout otomatis, pembayaran online, dan meningkatkan
+                  Layanan pembuatan aplikasi toko online Android & iOS yang
+                  modern dan profesional, dirancang untuk menampilkan katalog
+                  produk, checkout otomatis, pembayaran online, dan meningkatkan
                   penjualan bisnis Anda.
                 </p>
 
                 <ul className="my-2 grid grid-cols-1 sm:grid-cols-2">
                   <li className="flex items-center gap-2">
-                    <FaCheck className="text-purple-600" /> Android APK
+                    <FaCheck className="text-purple-600" /> Android & iOS App
                   </li>
                   <li className="flex items-center gap-2">
                     <FaCheck className="text-purple-600" /> UI Premium Design
@@ -850,14 +862,16 @@ const page = () => {
                 <div className="p-0.5 w-full pt-5 flex flex-col sm:flex-row xl:flex-col justify-between items-baseline">
                   <div>
                     <h3>Harga Mulai Dari</h3>
-                    <h1 className="text-3xl sm:text-4xl my-2">
+                    <p className="text-3xl sm:text-4xl my-2 font-semibold">
                       <sup className="text-xl">Rp</sup> 25.000.000
-                      <sub className="text-sm"> / Order</sub>
-                    </h1>
+                      <sub className="text-sm font-normal"> / Order</sub>
+                    </p>
                   </div>
 
                   <Link
                     href="https://wa.me/6285173135780?text=Halo%20saya%20tertarik%20dengan%20layanan%20pembuatan%20Aplikasi%20Toko%20Online."
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="self-end flex items-center gap-1 text-base sm:text-lg bg-purple-600 text-white px-3 py-1 rounded-md"
                   >
                     Pesan Sekarang
@@ -876,7 +890,7 @@ const page = () => {
             </TextBoxReveal>
 
             <TextBoxReveal>
-              <h1 className="text-4xl sm:text-5xl lg:text-6xl">Custom APK</h1>
+              <h2 className="text-4xl sm:text-5xl lg:text-6xl">Custom APK</h2>
             </TextBoxReveal>
 
             <motion.div
@@ -891,20 +905,20 @@ const page = () => {
               className="relative w-full h-fit rounded-md px-5 py-7 flex my-5 justify-start items-start gap-5 border-purple-600 hover:bg-purple-50 border hover:shadow-md transition-colors duration-300 ease-in-out"
             >
               <div>
-                <h1 className="text-2xl sm:text-3xl lg:text-4xl">
+                <h3 className="text-2xl sm:text-3xl lg:text-4xl">
                   Paket Custom Aplikasi
-                </h1>
+                </h3>
 
                 <p className="p-0.5">
-                  Layanan pembuatan aplikasi custom Android sesuai kebutuhan
-                  bisnis Anda. Cocok untuk booking system, administrasi,
-                  membership, ERP, marketplace, POS, hingga sistem operasional
-                  perusahaan.
+                  Layanan pembuatan aplikasi custom Android & iOS sesuai
+                  kebutuhan bisnis Anda. Cocok untuk booking system,
+                  administrasi, membership, ERP, marketplace, POS, hingga
+                  sistem operasional perusahaan.
                 </p>
 
                 <ul className="my-2 grid grid-cols-1 sm:grid-cols-2">
                   <li className="flex items-center gap-2">
-                    <FaCheck className="text-purple-600" /> Android App
+                    <FaCheck className="text-purple-600" /> Android & iOS App
                   </li>
                   <li className="flex items-center gap-2">
                     <FaCheck className="text-purple-600" /> UI / UX Premium
@@ -946,11 +960,13 @@ const page = () => {
                 <div className="p-0.5 w-full pt-5 flex flex-col sm:flex-row xl:flex-col justify-between items-baseline">
                   <div>
                     <h3>Harga Mulai Dari</h3>
-                    <h1 className="text-3xl sm:text-4xl my-2">Harga Khusus</h1>
+                    <p className="text-3xl sm:text-4xl my-2 font-semibold">Harga Khusus</p>
                   </div>
 
                   <Link
                     href="https://wa.me/6285173135780?text=Halo%20saya%20tertarik%20dengan%20layanan%20pembuatan%20Custom%20Aplikasi."
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="self-end flex items-center gap-1 text-base sm:text-lg bg-purple-600 text-white px-3 py-1 rounded-md"
                   >
                     Pesan Sekarang
@@ -973,9 +989,9 @@ const page = () => {
         transition={{ duration: 1 }}
         className="relative w-full h-fit flex flex-col justify-center items-center"
       >
-        <h1 className="text-4xl sm:text-5xl lg:text-6xl font-helveticaLight font-bold">
+        <h2 className="text-4xl sm:text-5xl lg:text-6xl font-helveticaLight font-bold">
           FAQ
-        </h1>
+        </h2>
         <h1 className="sm:text-xl lg:text-2xl text-gray-600">
           Pertanyaan seputar AceSolve
         </h1>
@@ -1237,8 +1253,8 @@ const page = () => {
                   <span className="bg-purple-600 rounded-sm p-0.5 px-2 text-white">
                     #
                   </span>{" "}
-                  Untuk saat ini kami hanya melayani pembuatan aplikasi Android
-                  dan website
+                  Ya, kami melayani pembuatan aplikasi Android, iOS, maupun
+                  website profesional
                 </div>
               </div>
             </div>

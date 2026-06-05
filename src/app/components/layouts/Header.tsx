@@ -29,12 +29,14 @@ const Header = () => {
       <Link href={"/"} className=" flex justify-center items-center gap-2 ">
         <img
           src="/logo/LogoWhite.png"
-          alt="Brand Logo"
+          alt="AceSolve Logo"
+          width={36}
+          height={32}
           className="h-7 sm:h-9 w-auto"
         />
-        <h1 className="text-lg sm:text-2xl font-semibold leading-6">
+        <span className="text-lg sm:text-2xl font-semibold leading-6">
           AceSolve<span className="text-purple-600">.</span>
-        </h1>
+        </span>
       </Link>
       <ul
         className={`${
@@ -115,6 +117,8 @@ const Header = () => {
       <div className="flex justify-center items-center w-fit gap-1 sm:gap-4">
         <Link
           href="https://api.whatsapp.com/send?phone=6285173135780"
+          target="_blank"
+          rel="noopener noreferrer"
           className=" group flex justify-center items-center gap-1 text-gray-800 sm:text-xl w-fit whitespace-nowrap relative py-1 pl-3 px-1 before:content-[''] before:w-full before:h-[1.5px] before:absolute before:left-0 before:bottom-0 before:bg-purple-500 before:transition-transform before:ease-in-out before:duration-[500ms] before:scale-x-0 before:scale-y-100 before:origin-right hover:before:scale-x-100 hover:before:origin-left"
         >
           Hubungi Kami{" "}

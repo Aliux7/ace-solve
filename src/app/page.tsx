@@ -38,12 +38,12 @@ export default function Home() {
       <TestimonialSection />
       <section className="relative w-full h-full min-h-screen flex flex-col justify-center items-start text-center sm:text-start">
         <TextBoxReveal width="100%">
-          <h3 className="font-helveticaLight text-xl w-full px-1">pilihan</h3>
+          <p className="font-helveticaLight text-xl w-full px-1">pilihan</p>
         </TextBoxReveal>
         <TextBoxReveal width="100%">
-          <h1 className="font-helveticaLight text-4xl sm:text-6xl lg:text-7xl pb-1">
+          <h2 className="font-helveticaLight text-4xl sm:text-6xl lg:text-7xl pb-1">
             Layanan Website
-          </h1>
+          </h2>
         </TextBoxReveal>
         <ul className="w-full xl:min-h-[42.5rem] h-full xl:h-screen xl:max-h-[45rem] my-10 flex flex-col xl:flex-row gap-10 text-start">
           <motion.li
@@ -59,7 +59,7 @@ export default function Home() {
           >
             <div className="flex flex-col justify-between items-start h-full">
               <div>
-                <h1 className="text-3xl sm:text-4xl">Landing Page</h1>
+                <h3 className="text-3xl sm:text-4xl">Landing Page</h3>
                 <p className="p-0.5 text-sm sm:text-base">
                   Layanan landing page website yang dirancang khusus untuk
                   mempromosikan produk. Cocok untuk pemasaran digital atau iklan
@@ -116,10 +116,10 @@ export default function Home() {
               <div className="p-0.5 w-full pt-5 flex flex-col sm:flex-row xl:flex-col justify-between items-baseline">
                 <div>
                   <h3>Harga Mulai Dari</h3>
-                  <h1 className="text-3xl sm:text-4xl my-2">
+                  <p className="text-3xl sm:text-4xl my-2 font-semibold">
                     <sup className="text-xl">Rp</sup> 1.000.000
-                    <sub className="text-sm"> / Order</sub>
-                  </h1>
+                    <sub className="text-sm font-normal"> / Order</sub>
+                  </p>
                 </div>
                 <Link
                   href="/layanan/#landing-page"
@@ -143,11 +143,11 @@ export default function Home() {
             className="relative w-full h-full rounded-md px-5 py-7 flex justify-start items-start gap-5 xl:mt-10 border-purple-600 hover:bg-purple-50 border hover:shadow-md transition-colors duration-300 ease-in-out"
           >
             <div className="absolute top-0 right-5 -translate-y-1/2">
-              <img src="/icon/fire.png" className="w-14 h-14" />
+              <img src="/icon/fire.png" alt="" width={56} height={56} className="w-14 h-14" />
             </div>
             <div className="flex flex-col justify-between items-start h-full">
               <div className="">
-                <h1 className="text-3xl sm:text-4xl">Company Profile</h1>
+                <h3 className="text-3xl sm:text-4xl">Company Profile</h3>
                 <p className="p-0.5 text-sm sm:text-base">
                   Layanan pembuatan website company profile yang informatif dan
                   dirancang untuk memperkuat citra perusahaan Anda. Cocok untuk
@@ -205,10 +205,10 @@ export default function Home() {
               <div className="p-0.5 w-full pt-5 flex flex-col sm:flex-row xl:flex-col justify-between items-baseline">
                 <div>
                   <h3>Harga Mulai Dari</h3>
-                  <h1 className="text-3xl sm:text-4xl my-2">
+                  <p className="text-3xl sm:text-4xl my-2 font-semibold">
                     <sup className="text-xl">Rp</sup> 1.500.000
-                    <sub className="text-sm"> / Order</sub>
-                  </h1>
+                    <sub className="text-sm font-normal"> / Order</sub>
+                  </p>
                 </div>
                 <Link
                   href="/layanan/#company-profile"
@@ -233,7 +233,7 @@ export default function Home() {
           >
             <div className="flex flex-col justify-between items-start h-full">
               <div>
-                <h1 className="text-3xl sm:text-4xl">Custom</h1>
+                <h3 className="text-3xl sm:text-4xl">Custom</h3>
                 <p className="p-0.5 text-sm sm:text-base">
                   Layanan pembuatan website custom yang akan disesuaikan dengan
                   kebutuhan Anda. Mulai dari web e-commerce hingga sistem
@@ -274,7 +274,7 @@ export default function Home() {
               <div className="p-0.5 w-full pt-5 flex flex-col sm:flex-row xl:flex-col justify-between items-baseline">
                 <div>
                   <h3>Harga Mulai Dari</h3>
-                  <h1 className="text-3xl sm:text-4xl my-2">Harga Khusus</h1>
+                  <p className="text-3xl sm:text-4xl my-2 font-semibold">Harga Khusus</p>
                 </div>
                 <Link
                   href="/layanan/#custom-page"
@@ -309,22 +309,22 @@ export default function Home() {
       </section>
       <section className="relative w-full h-full min-h-screen flex flex-col justify-center items-start text-center sm:text-start">
         <TextBoxReveal width="100%">
-          <h3 className="font-helveticaLight text-xl w-full px-1">Tersedia</h3>
+          <p className="font-helveticaLight text-xl w-full px-1">Tersedia</p>
         </TextBoxReveal>
         <TextBoxReveal width="100%">
-          <h1 className="font-helveticaLight text-4xl sm:text-6xl lg:text-7xl pb-1">
+          <h2 className="font-helveticaLight text-4xl sm:text-6xl lg:text-7xl pb-1">
             Lokasi Cabang
-          </h1>
+          </h2>
         </TextBoxReveal>
         <div className="mt-5 w-full">
           <TextBoxReveal width="full">
             <div className="w-full border-y px-3 lg:px-5 py-5 md:py-7 flex flex-col lg:flex-row justify-between items-start gap-6 sm:gap-6 md:gap-14 lg:gap-20 xl:gap-32 hover:border-y-purple-300 hover:bg-purple-100 transition-all duration-300 ease-in-out">
               <div className="flex flex-col sm:flex-row justify-start items-start gap-5 h-[300px] flex-1 w-full sm:w-auto">
-                <h1 className="hidden sm:block text-3xl sm:text-4xl md:text-5xl lg:text-6xl">
+                <p className="hidden sm:block text-3xl sm:text-4xl md:text-5xl lg:text-6xl" aria-hidden="true">
                   01/
-                </h1>
+                </p>
                 <div className="flex flex-col gap-2 text-center sm:text-start justify-between w-full h-full">
-                  <h1 className="text-3xl lg:text-4xl">AceSolve Jakarta</h1>
+                  <h3 className="text-3xl lg:text-4xl">AceSolve Jakarta</h3>
                   <div className="flex flex-col lg:flex-row justify-between items-center sm:items-start lg:items-center gap-5 w-full flex-wrap">
                     <div className="flex flex-col text-gray-600">
                       <span className="text-nowrap">
@@ -355,11 +355,11 @@ export default function Home() {
           <TextBoxReveal width="full">
             <div className="w-full border-y px-3 lg:px-5 py-5 md:py-7 flex flex-col lg:flex-row justify-between items-start gap-6 sm:gap-6 md:gap-14 lg:gap-20 xl:gap-32 hover:border-y-purple-300 hover:bg-purple-100 transition-all duration-300 ease-in-out">
               <div className="flex flex-col sm:flex-row justify-start items-start gap-5 h-[300px] flex-1 w-full sm:w-auto">
-                <h1 className="hidden sm:block text-3xl sm:text-4xl md:text-5xl lg:text-6xl">
+                <p className="hidden sm:block text-3xl sm:text-4xl md:text-5xl lg:text-6xl" aria-hidden="true">
                   02/
-                </h1>
+                </p>
                 <div className="flex flex-col gap-2 text-center sm:text-start justify-between w-full h-full">
-                  <h1 className="text-3xl lg:text-4xl">AceSolve Surabaya</h1>
+                  <h3 className="text-3xl lg:text-4xl">AceSolve Surabaya</h3>
                   <div className="flex flex-col lg:flex-row justify-between items-center sm:items-start lg:items-center gap-5 w-full flex-wrap">
                     <div className="flex flex-col text-gray-600">
                       <span className="text-nowrap">

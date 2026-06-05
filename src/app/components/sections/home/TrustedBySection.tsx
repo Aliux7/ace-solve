@@ -18,7 +18,7 @@ const TrustedBySection = () => {
         className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 h-40 sm:h-60 w-auto opacity-[7%]"
       />
       <div className="max-w-6xl mx-auto px-6 text-center">
-        <motion.h1
+        <motion.h2
           variants={{
             hidden: { opacity: 0, y: 25 },
             visible: { opacity: 1, y: 0 },
@@ -27,10 +27,10 @@ const TrustedBySection = () => {
           whileInView="visible"
           viewport={{ once: true }}
           transition={{ duration: 1 }}
-          className="font-helveticaLight text-xl                                                                 sm:text-2xl xl:text-3xl mb-10 text-center font-semibold"
+          className="font-helveticaLight text-xl sm:text-2xl xl:text-3xl mb-10 text-center font-semibold"
         >
           Dipercaya Oleh
-        </motion.h1>
+        </motion.h2>
 
         <div className="grid grid-cols-1 lg:grid-cols-5 gap-10 lg:gap-8 items-center">
           <motion.img
@@ -42,8 +42,10 @@ const TrustedBySection = () => {
             whileInView="visible"
             viewport={{ once: true }}
             transition={{ duration: 1 }}
-            src="/companies/eurogold.png"
-            alt="Company 5"
+            src="/companies/eurogold.webp"
+            alt="EuroGold"
+            width={698}
+            height={269}
             className="mx-auto h-14 object-contain grayscale hover:grayscale-0 transition-color"
           />
 
@@ -56,8 +58,10 @@ const TrustedBySection = () => {
             whileInView="visible"
             viewport={{ once: true }}
             transition={{ duration: 1, delay: 0.5 }}
-            src="/companies/fome.png"
-            alt="Company 1"
+            src="/companies/fome.webp"
+            alt="FOME"
+            width={500}
+            height={500}
             className="mx-auto h-14 object-contain grayscale hover:grayscale-0 transition-color"
           />
 
@@ -70,8 +74,10 @@ const TrustedBySection = () => {
             whileInView="visible"
             viewport={{ once: true }}
             transition={{ duration: 1, delay: 1 }}
-            src="/companies/pakuwon.png"
-            alt="Company 3"
+            src="/companies/pakuwon.webp"
+            alt="Pakuwon"
+            width={1168}
+            height={205}
             className="mx-auto h-10 object-contain grayscale hover:grayscale-0 transition-color"
           />
 
@@ -84,8 +90,10 @@ const TrustedBySection = () => {
             whileInView="visible"
             viewport={{ once: true }}
             transition={{ duration: 1, delay: 1.5 }}
-            src="/companies/binus.png"
-            alt="Company 1"
+            src="/companies/binus.webp"
+            alt="Binus University"
+            width={2202}
+            height={1355}
             className="mx-auto h-16 object-contain grayscale hover:grayscale-0 transition-color"
           />
 
@@ -98,8 +106,10 @@ const TrustedBySection = () => {
             whileInView="visible"
             viewport={{ once: true }}
             transition={{ duration: 1, delay: 2 }}
-            src="/companies/modelano.png"
-            alt="Company 2"
+            src="/companies/modelano.webp"
+            alt="Modelano"
+            width={823}
+            height={127}
             className="mx-auto mt-2 h-6 object-contain grayscale hover:grayscale-0 transition-color"
           />
         </div>

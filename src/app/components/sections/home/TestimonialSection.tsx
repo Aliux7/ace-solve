@@ -88,9 +88,9 @@ export const TestimonialSection = () => {
     <section className="py-20 overflow-hidden">
       <div className="flex flex-col gap-10">
         <TextBoxReveal>
-          <h1 className="font-helveticaLight text-4xl sm:text-[2.75rem] md:text-5xl lg:text-6xl xl:text-7xl pb-1 text-center sm:text-start">
+          <h2 className="font-helveticaLight text-4xl sm:text-[2.75rem] md:text-5xl lg:text-6xl xl:text-7xl pb-1 text-center sm:text-start">
             Apa Kata Mereka?
-          </h1>
+          </h2>
         </TextBoxReveal>
 
         <div className="group flex overflow-hidden [mask-image:linear-gradient(to_right,transparent,white_20%,white_80%,transparent)]">

@@ -15,6 +15,8 @@ const Footer = () => {
             <li>
               <Link
                 href={"https://www.instagram.com/acesolvetech"}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="text-gray-500 hover:text-gray-900 relative py-1 flex justify-center items-center gap-3 before:content-[''] before:w-full before:h-[1.5px] before:absolute before:left-0 before:bottom-0 before:bg-purple-500 before:transition-transform before:ease-in-out before:duration-[500ms] before:scale-x-0 before:scale-y-100 before:origin-right hover:before:scale-x-100 hover:before:origin-left"
               >
                 <FaInstagram className="w-5 h-5" /> Instagram
@@ -23,6 +25,8 @@ const Footer = () => {
             <li>
               <Link
                 href="https://api.whatsapp.com/send?phone=6285173135780"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="text-gray-500 hover:text-gray-900 relative py-1 flex justify-center items-center gap-3 before:content-[''] before:w-full before:h-[1.5px] before:absolute before:left-0 before:bottom-0 before:bg-purple-500 before:transition-transform before:ease-in-out before:duration-[500ms] before:scale-x-0 before:scale-y-100 before:origin-right hover:before:scale-x-100 hover:before:origin-left"
               >
                 <FaWhatsapp className="w-5 h-5" /> Whatsapp

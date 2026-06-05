@@ -95,7 +95,7 @@ const page = () => {
     {
       image: "/porto/porto8.webp",
       title: "Cashwise",
-      description: "Aplikasi Android Mengatur Keuangan dan Investasi",
+      description: "Aplikasi Mobile Mengatur Keuangan dan Investasi",
       link: "https://expo.dev/accounts/aliux7/projects/cashwise/builds/276b79c5-9b33-4739-85ea-346358eddd6f",
     },
     {
@@ -272,6 +272,8 @@ const page = () => {
                 {portofolio.link !== "Unpublish" ? (
                   <a
                     href={portofolio.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="absolute bottom-3.5 right-5 md:right-3 lg:right-5 group flex justify-center items-center gap-1 text-gray-800 text-base sm:text-lg md:text-base lg:text-lg xl:text-xl w-fit whitespace-nowrap py-1 pl-3 px-1 before:content-[''] before:w-full before:h-[1.5px] before:absolute before:left-0 before:bottom-0 before:bg-purple-500 before:transition-transform before:ease-in-out before:duration-[500ms] before:scale-x-0 before:scale-y-100 before:origin-right hover:before:scale-x-100 hover:before:origin-left"
                   >
                     Lihat Project{" "}
