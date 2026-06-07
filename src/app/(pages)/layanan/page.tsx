@@ -8,6 +8,8 @@ import { TextBoxReveal } from "@/app/components/ui/TextBoxReveal";
 import LocomotiveScroll from "locomotive-scroll";
 import splitStringUsingRegex from "@/app/utlis/splitStringUsingRegex";
 import Link from "next/link";
+import { useTrafficSource } from "@/app/hooks/useTrafficSource";
+import { buildWALink } from "@/app/utils/waLink";
 
 const page = () => {
   const controls = useAnimation();
@@ -19,6 +21,7 @@ const page = () => {
   const firstSubHeading = splitStringUsingRegex("pilihan utama");
   const secondSubHeading = splitStringUsingRegex("Layanan Website");
   const [openFaq, setOpenFaq] = useState(0);
+  const source = useTrafficSource();
 
   useEffect(() => {
     let locomotiveScroll: LocomotiveScroll;
@@ -305,7 +308,7 @@ const page = () => {
                     </p>
                   </div>
                   <Link
-                    href="https://wa.me/6285173135780?text=Halo%20saya%20tertarik%20dengan%20layanan%20jasa%20pembuatan%20website%20untuk%20Paket%20Landing%20Page."
+                    href={buildWALink("Halo saya tertarik dengan layanan jasa pembuatan website untuk Paket Landing Page.", source)}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="self-end flex justify-start items-center gap-1 text-base sm:text-lg bg-purple-600 text-white px-3 py-1 rounded-md"
@@ -406,7 +409,7 @@ const page = () => {
                     </p>
                   </div>
                   <Link
-                    href="https://wa.me/6285173135780?text=Halo%20saya%20tertarik%20dengan%20layanan%20jasa%20pembuatan%20website%20untuk%20Paket%20Company%20Profile."
+                    href={buildWALink("Halo saya tertarik dengan layanan jasa pembuatan website untuk Paket Company Profile.", source)}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="self-end flex justify-start items-center gap-1 text-base sm:text-lg bg-purple-600 text-white px-3 py-1 rounded-md"
@@ -500,7 +503,7 @@ const page = () => {
                     </p>
                   </div>
                   <Link
-                    href="https://wa.me/6285173135780?text=Halo%20saya%20tertarik%20dengan%20layanan%20jasa%20pembuatan%20website%20untuk%20Paket%20Portofolio."
+                    href={buildWALink("Halo saya tertarik dengan layanan jasa pembuatan website untuk Paket Portofolio.", source)}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="self-end flex justify-start items-center gap-1 text-base sm:text-lg bg-purple-600 text-white px-3 py-1 rounded-md"
@@ -578,7 +581,7 @@ const page = () => {
                     <p className="text-3xl sm:text-4xl my-2 font-semibold">Harga Khusus</p>
                   </div>
                   <Link
-                    href="https://wa.me/6285173135780?text=Halo%20saya%20tertarik%20dengan%20layanan%20jasa%20pembuatan%20website%20untuk%20Paket%20Custom."
+                    href={buildWALink("Halo saya tertarik dengan layanan jasa pembuatan website untuk Paket Custom.", source)}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="self-end flex justify-start items-center gap-1 text-base sm:text-lg bg-purple-600 text-white px-3 py-1 rounded-md"
@@ -676,7 +679,7 @@ const page = () => {
                     </p>
                   </div>
                   <Link
-                    href="https://wa.me/6285173135780?text=Halo%20saya%20tertarik%20dengan%20layanan%20jasa%20pembuatan%20website%20untuk%20Paket%20Toko%20Online."
+                    href={buildWALink("Halo saya tertarik dengan layanan jasa pembuatan website untuk Paket Toko Online.", source)}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="self-end flex justify-start items-center gap-1 text-base sm:text-lg bg-purple-600 text-white px-3 py-1 rounded-md"
@@ -765,7 +768,7 @@ const page = () => {
                     </p>
                   </div>
                   <Link
-                    href="https://wa.me/6285173135780?text=Halo%20saya%20tertarik%20dengan%20layanan%20jasa%20pembuatan%20website%20untuk%20Paket%20Administrasi."
+                    href={buildWALink("Halo saya tertarik dengan layanan jasa pembuatan website untuk Paket Administrasi.", source)}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="self-end flex justify-start items-center gap-1 text-base sm:text-lg bg-purple-600 text-white px-3 py-1 rounded-md"
@@ -863,13 +866,13 @@ const page = () => {
                   <div>
                     <h3>Harga Mulai Dari</h3>
                     <p className="text-3xl sm:text-4xl my-2 font-semibold">
-                      <sup className="text-xl">Rp</sup> 25.000.000
+                      <sup className="text-xl">Rp</sup> 20.000.000
                       <sub className="text-sm font-normal"> / Order</sub>
                     </p>
                   </div>
 
                   <Link
-                    href="https://wa.me/6285173135780?text=Halo%20saya%20tertarik%20dengan%20layanan%20pembuatan%20Aplikasi%20Toko%20Online."
+                    href={buildWALink("Halo saya tertarik dengan layanan pembuatan Aplikasi Toko Online.", source)}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="self-end flex items-center gap-1 text-base sm:text-lg bg-purple-600 text-white px-3 py-1 rounded-md"
@@ -964,7 +967,7 @@ const page = () => {
                   </div>
 
                   <Link
-                    href="https://wa.me/6285173135780?text=Halo%20saya%20tertarik%20dengan%20layanan%20pembuatan%20Custom%20Aplikasi."
+                    href={buildWALink("Halo saya tertarik dengan layanan pembuatan Custom Aplikasi.", source)}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="self-end flex items-center gap-1 text-base sm:text-lg bg-purple-600 text-white px-3 py-1 rounded-md"

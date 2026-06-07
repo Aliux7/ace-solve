@@ -16,6 +16,8 @@ export default function Home() {
   useEffect(() => {
     let locomotiveScroll: LocomotiveScroll;
 
+
+    
     if (typeof window !== "undefined") {
       import("locomotive-scroll").then((LocomotiveScrollModule) => {
         locomotiveScroll = new LocomotiveScrollModule.default();

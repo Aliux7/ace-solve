@@ -4,12 +4,15 @@ import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
 import React, { useState } from "react";
 import { GoArrowUp, GoArrowUpRight } from "react-icons/go";
+import { useTrafficSource } from "@/app/hooks/useTrafficSource";
+import { buildWALink } from "@/app/utils/waLink";
 
 const Header = () => {
   const { scrollY } = useViewportScroll();
   const [onTop, setOnTop] = useState(true);
   const pathname = usePathname();
   const [openHamburger, setOpenHamburger] = useState(false);
+  const source = useTrafficSource();
 
   const isActive = (route: string) => pathname === route;
 
@@ -116,7 +119,7 @@ const Header = () => {
       </ul>
       <div className="flex justify-center items-center w-fit gap-1 sm:gap-4">
         <Link
-          href="https://api.whatsapp.com/send?phone=6285173135780"
+          href={buildWALink("Halo, saya ingin konsultasi gratis dengan AceSolve.", source)}
           target="_blank"
           rel="noopener noreferrer"
           className=" group flex justify-center items-center gap-1 text-gray-800 sm:text-xl w-fit whitespace-nowrap relative py-1 pl-3 px-1 before:content-[''] before:w-full before:h-[1.5px] before:absolute before:left-0 before:bottom-0 before:bg-purple-500 before:transition-transform before:ease-in-out before:duration-[500ms] before:scale-x-0 before:scale-y-100 before:origin-right hover:before:scale-x-100 hover:before:origin-left"

@@ -4,9 +4,12 @@ import splitStringUsingRegex from "@/app/utlis/splitStringUsingRegex";
 import { FaWhatsapp } from "react-icons/fa";
 import { GoArrowUp, GoProjectTemplate } from "react-icons/go";
 import CountUp from "../../ui/CountUp";
+import { useTrafficSource } from "@/app/hooks/useTrafficSource";
+import { buildWALink } from "@/app/utils/waLink";
 
 const HeroSection = () => {
   const controls = useAnimation();
+  const source = useTrafficSource();
   const firstLineHeading = splitStringUsingRegex("We Solve Your");
   const secondLineHeading = splitStringUsingRegex("Digital Challenges");
   const subHeading = splitStringUsingRegex(
@@ -114,7 +117,7 @@ const HeroSection = () => {
         </motion.h3>
         <div className="flex justify-center lg:justify-start items-center gap-2 sm:gap-5 my-1">
           <motion.a
-            href="https://api.whatsapp.com/send?phone=6285173135780"
+            href={buildWALink("Halo, saya ingin konsultasi gratis dengan AceSolve.", source)}
             target="_blank"
             rel="noopener noreferrer"
             variants={{

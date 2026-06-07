@@ -4,8 +4,11 @@ import React from "react";
 import { FaInstagram } from "react-icons/fa";
 import { FaWhatsapp } from "react-icons/fa";
 import { TextBoxReveal } from "../ui/TextBoxReveal";
+import { useTrafficSource } from "@/app/hooks/useTrafficSource";
+import { buildWALink } from "@/app/utils/waLink";
 
 const Footer = () => {
+  const source = useTrafficSource();
   return (
     <div className="w-full flex flex-col justify-end items-center h-full px-3 sm:px-6 lg:px-10 mt-60">
       <div className="border-t w-full py-3 pb-5 sm:py-5 flex flex-col ">
@@ -24,7 +27,7 @@ const Footer = () => {
             </li>
             <li>
               <Link
-                href="https://api.whatsapp.com/send?phone=6285173135780"
+                href={buildWALink("Halo, saya ingin konsultasi gratis dengan AceSolve.", source)}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-500 hover:text-gray-900 relative py-1 flex justify-center items-center gap-3 before:content-[''] before:w-full before:h-[1.5px] before:absolute before:left-0 before:bottom-0 before:bg-purple-500 before:transition-transform before:ease-in-out before:duration-[500ms] before:scale-x-0 before:scale-y-100 before:origin-right hover:before:scale-x-100 hover:before:origin-left"
